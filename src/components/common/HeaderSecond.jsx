@@ -44,7 +44,7 @@ const HeaderSecond = () => {
                         <a href="" className="list-text fw-normal text-black">TAB NAME</a>
                     </div>
                     <div className="toggle-button" onClick={toggleOpen}>
-                        {open ? "Close" : "Menu"}
+                        {open ? "Close" : "Open Menu"}
                     </div>
                 </div>
             </div>

@@ -42,7 +42,7 @@ const HeaderFirst = () => {
                     </div>
                     <button className='nav-button fw-semibold text-white d-lg-block d-none'>Button</button>
                     <div className="toggle-button" onClick={toggleOpen}>
-                        {open ? "Close" : "Menu"}
+                        {open ? "Close" : "Open Menu"}
                     </div>
                 </div>
             </div>

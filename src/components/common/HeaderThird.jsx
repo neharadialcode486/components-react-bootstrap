@@ -41,7 +41,7 @@ const HeaderThird = () => {
                         <button className='nav-button fw-semibold text-white'>Button</button>
                     </div>
                     <div className="toggle-button" onClick={toggleOpen}>
-                        {open ? "Close" : "Menu"}
+                        {open ? "Close" : "Open Menu"}
                     </div>
                 </div>
             </div>
