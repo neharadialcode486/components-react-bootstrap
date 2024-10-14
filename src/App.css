@@ -38,6 +38,10 @@
   border-radius: 12px;
   padding: 14.5px 56px;
   border: none;
+  transition: 0.2s;
+}
+.nav-button:hover{
+  scale: .95;
 }
 
 .nav-py {
