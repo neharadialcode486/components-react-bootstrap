@@ -52,6 +52,14 @@
   z-index: 100;
   display: none;
 }
+.icon-cross {
+  width: 24px;
+  height: 24px;
+}
+.icon {
+  width: 28px;
+  height: 28px;
+}
 .icon-cross svg path {
   fill: #3c278d;
 }
@@ -86,5 +94,15 @@
     display: flex;
     display: grid;
     place-items: center;
+  }
+}
+@media(max-width:576.99px){
+  .icon-cross{
+    width: 20px;
+    height: 20px;
+  }
+  .icon{
+    width: 24px;
+      height: 24px;
   }
 }
