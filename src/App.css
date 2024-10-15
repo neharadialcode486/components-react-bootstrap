@@ -52,6 +52,13 @@
   z-index: 100;
   display: none;
 }
+.icon-cross svg path {
+  fill: #3c278d;
+}
+
+.icon svg path {
+  fill: black;
+}
 
 @media(max-width:991.99px) {
   .menu-list {
@@ -67,7 +74,7 @@
     align-items: center;
     justify-content: center;
     z-index: 6;
-    transition: all 0.3s ease;
+    transition: all 400ms linear !important;
   }
 
   .menu-list.show {
