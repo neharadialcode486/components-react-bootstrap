@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import navLogo from '../../assets/images/webp/nav-logo.webp';
-import { NAV_ITEMS } from '../../utils/Helper'
 
 const HeaderSecond = () => {
     const [open, setOpen] = useState(false);
