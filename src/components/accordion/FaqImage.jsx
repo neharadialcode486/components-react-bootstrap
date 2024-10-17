@@ -24,18 +24,18 @@ const FaqImage = () => {
     };
 
     return (
-        <div className='z-1 position-relative lg:py-24 md:py-20 sm:py-64 py-14 xl:py-28'>
+        <div className='z-1 position-relative py-64'>
             <div className="container">
-                <div className="d-flex flex-col xl:flex-row gap-10 items-center justify-center">
-                    <div className="pt-1.5 xl:max-w-[529px] w-full">
-                        <h2 className=' xl:text-left text-center fw-bold text-5xl'>FAQ </h2>
-                        <p className='font-inter xl:text-left text-center opacity-70 font-normal text-base mt-4'>Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum suspendisse quam. Hac posuere eget nam diam velit urna adipiscing diam. </p>
+                <div className="d-flex flex-column flex-xl-row gap-40 align-items-center justify-content-center">
+                    <div className="pt-1 max-xl-w-529 w-100">
+                        <h2 className=' text-xl-left text-center fw-bold text-5xl'>FAQ </h2>
+                        <p className=' text-xl-left mb-0 text-center opacity-70 fw-normal text-base mt-4'>Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum suspendisse quam. Hac posuere eget nam diam velit urna adipiscing diam. </p>
                         {ACCORDION_DATA.slice(0, 4).map((item, index) => (
-                            <div key={index} className={`overflow-hidden d-flex mt-2.5 justify-center position-relative duration-300 ease-linear border border-deep-blue rounded-2xl ${index === 0 ? "sm:mt-6" : "sm:mt-4"}`}>
-                                <div className="accordion w-full">
+                            <div key={index} className={`overflow-hidden d-flex mt-2 justify-content-center position-relative transition border border-deep-blue rounded-2xl ${index === 0 ? "mt-sm-24" : "mt-sm-20"}`}>
+                                <div className="accordion w-100">
                                     <div
                                         role="button"
-                                        className={`bg-white position-relative z-1 d-flex items-center justify-between gap-1.5 cursor-pointer sm:px-6 pt-3 pb-2 px-3 sm:pt-5 ${openIndex === index ? "sm:pb-4" : "sm:pb-5"}`}
+                                        className={`bg-white position-relative z-1 d-flex align-items-center justify-content-between gap-1 cursor-pointer px-sm-24 py-3 px-3 pt-sm-20 ${openIndex === index ? "pb-sm-16" : "pb-sm-20"}`}
                                         onClick={() => handleToggle(index)}
                                         aria-expanded={openIndex === index}
                                         tabIndex={0}
@@ -45,10 +45,10 @@ const FaqImage = () => {
                                             }
                                         }}
                                     >
-                                        <h3 className="font-semibold text-deep-blue font-inter text-base sm:text-xl">
-                                            <span className='font-inter font-normal'>{index + 1} . </span>{item.title}
+                                        <h3 className="fw-semibold text-deep-blue  text-base text-sm-xl">
+                                            <span className=' fw-normal'>{index + 1} . </span>{item.title}
                                         </h3>
-                                        <div className={`${openIndex === index ? 'rotate-180' : ''} w-3 sm:w-5 duration-300 ease-linear`}>
+                                        <div className={`${openIndex === index ? 'rotate-180' : ''} w-12 w-sm-20 transition`}>
                                             <Icon iconName='downIcon' />
                                         </div>
                                     </div>
@@ -56,14 +56,14 @@ const FaqImage = () => {
                                         ref={(el) => {
                                             contentRefs.current[index] = el;
                                         }}
-                                        className={`accordion-content max-h-0 overflow-hidden duration-300 ease-linear ${openIndex === index ? 'max-h-96' : 'max-h-0'}`}
+                                        className={`accordion-content max-h-0 overflow-hidden transition ${openIndex === index ? 'max-h-96' : 'max-h-0'}`}
                                         style={{
                                             maxHeight: openIndex === index ? getHeight(index) : '0px',
                                         }}
                                     >
-                                        <div className="d-flex flex-col px-6 pb-4">
-                                            <span className='bg-black d-flex w-full h-px opacity-40'></span>
-                                            <p className="text-black opacity-70 sm:pt-3 pt-2 text-sm sm:text-base font-normal font-inter">
+                                        <div className="d-flex flex-column px-24 pb-16">
+                                            <span className='bg-black d-flex w-100 h-1 opacity-40'></span>
+                                            <p className="text-black opacity-70 pt-sm-12 pt-2 text-sm text-sm-base fw-normal ">
                                                 Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec. Feugiat nibh ullamcorper egestas
                                             </p>
                                         </div>
@@ -72,8 +72,8 @@ const FaqImage = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="max-w-[576px] w-full max-h-[349px] md:max-h-[594px] d-flex overflow-hidden">
-                        <img src={openIndex !== null ? owlImages[openIndex] : owl1} alt="owl-bird" className='w-full' />
+                    <div className="max-w-576 w-100 max-h-349 max-h-594 d-flex overflow-hidden">
+                        <img src={openIndex !== null ? owlImages[openIndex] : owl1} alt="owl-bird" className='w-100' />
                     </div>
                 </div>
             </div>
