@@ -10,7 +10,7 @@ const DataSwiper = () => {
     return (
         <div className='mt-7 position-relative w-100'>
             <div className="d-flex w-100 justify-content-between mb-6">
-                <h2 className='font-bold text-2xl'>Recommended for you</h2>
+                <h2 className='fw-bold text-2xl'>Recommended for you</h2>
                 <div className="d-flex align-items-center gap-2 position-relative">
                     <Icon className="hover:scale-95 swiper-button-next !top-auto !position-relative !right-auto !w-8 !h-8 cursor-pointer hover:bg-white transition hover:border-off-yellow rounded-full border border-[#BBBAB6]" iconName='rightArrowIcon' />
                     <Icon className="hover:scale-95 swiper-button-prev !top-auto !position-relative !left-auto rotate-180 cursor-pointer !w-8 !h-8 hover:bg-white transition hover:border-off-yellow rounded-full border border-[#BBBAB6]" iconName='rightArrowIcon' />
@@ -48,7 +48,7 @@ const DataSwiper = () => {
                                     <img src={items.img} alt={items.img} className='w-100 position-relative z-10 hover:scale-110 transition' />
                                 </div>
                                 <div className="bg-white w-100 -mt-0.5 p-6">
-                                    <h2 className='mt-0.5 text-base leading-4 font-bold min-h-8'>{items.title}</h2>
+                                    <h2 className='mt-0.5 text-base leading-4 fw-bold min-h-8'>{items.title}</h2>
                                     <div className="d-flex align-items-center gap-2.5 mt-4">
                                         <Icon iconName='clockIcon' />
                                         <p className='fw-normal text-xs'>Online</p>

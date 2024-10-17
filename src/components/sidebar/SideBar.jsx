@@ -10,15 +10,15 @@ const SideBar = () => {
     return (
         <div className='d-flex justify-content-between bg-dark-gray'>
             <Header />
-            <div className="bg-off-yellow w-100 position-fixed max-w-[1920px] top-0 d-flex justify-end left-1/2 -translate-x-1/2 h-[240px]">
-                <img src={plus} alt="plus" className='max-w-[200px] w-100 lg:opacity-100 opacity-30' />
+            <div className="bg-off-yellow w-100 position-fixed max-w-1920 top-0 d-flex justify-content-end translate-middle-x start-50 h-240">
+                <img src={plus} alt="plus" className='dot-img' />
             </div>
-            <div className="lg:p-8 p-3 position-relative z-20 w-100 sm:w-[83.3%] overflow-hidden">
-                <h2 className='font-bold text-3xl md:text-4xl mt-7 sm:mt-2'>Welcome back, Zareh 👋🏻</h2>
-                <p className='mt-5 fw-normal text-base'>Below you find your upcoming events, enrolled programmes and progress</p>
-                <div className="mt-12 xl:flex-row flex-column d-flex justify-content-between gap-20">
-                    <div className="rounded-lg w-100 xl:w-[58.7%] bg-white p-3 lg:p-8">
-                        <h2 className='font-bold text-2xl mb-4 lg:mb-9'>You have 3 upcoming events</h2>
+            <div className="p-lg-4 p-2 position-relative z-20 w-100 w-sm-83 overflow-hidden">
+                <h2 className='fw-bold text-3xl text-md-4xl mt-4 mt-sm-2'>Welcome back, Zareh 👋🏻</h2>
+                <p className='mt-3 fw-normal text-base'>Below you find your upcoming events, enrolled programmes and progress</p>
+                <div className="mt-5 flex-xl-row flex-column d-flex justify-content-between gap-20">
+                    <div className="rounded-lg w-100 w-xl-58 bg-white p-2 p-lg-32">
+                        <h2 className='fw-bold text-2xl mb-4 lg:mb-9'>You have 3 upcoming events</h2>
                         {EVENTS_DATA.map((items, idx) => (
                             <div key={idx} className="d-flex justify-content-between align-items-center mt-4 w-100">
                                 <div className="d-flex flex-column align-items-center justify-center bg-black md:w-20 md:h-20 sm:h-16 w-14 h-14 sm:w-16 rounded-full">
@@ -26,7 +26,7 @@ const SideBar = () => {
                                     <p className='font-light text-xs sm:text-sm md:text-lg text-white md:leading-5 capitalize'>{items.months}</p>
                                 </div>
                                 <div className="d-flex flex-column max-w-[444px] w-8/12 lg:w-100">
-                                    <p className='font-bold text-sm md:text-base'>{items.title}</p>
+                                    <p className='fw-bold text-sm md:text-base'>{items.title}</p>
                                     <div className="d-flex align-items-center mt-2">
                                         <Icon iconName='clockIcon' />
                                         <p className='fw-normal text-xs ml-1'>{items.time}</p>
@@ -39,11 +39,11 @@ const SideBar = () => {
                         ))}
                         <a href="/" className='d-flex align-items-center gap-2 font-semibold text-sm transition group hover:scale-105 mt-12 w-fit mb-5 md:mb-14'>More events <Icon className='transition group-hover:scale-90' iconName='rightArrowIcon' /></a>
                     </div>
-                    <div className="rounded-lg w-100 xl:w-[41.3%] bg-white p-3 lg:p-8">
-                        <h2 className='font-bold text-2xl mb-4 lg:mb-9'>Your programmes</h2>
+                    <div className="rounded-lg w-100 w-xl-41 bg-white p-2 p-lg-32">
+                        <h2 className='fw-bold text-2xl mb-4 lg:mb-9'>Your programmes</h2>
                         {[...Array(2)].map((_, index) => (
                             <div key={index} className="border border-dark-gray rounded-lg py-8 px-6 mt-4 position-relative overflow-hidden">
-                                <h2 className='font-bold text-lg mb-4'>The role of LNG</h2>
+                                <h2 className='fw-bold text-lg mb-4'>The role of LNG</h2>
                                 {[...Array(5)]
                                     .slice(0, index === 0 ? 5 : 2)
                                     .map((_, idx) => (
