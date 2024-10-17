@@ -7,6 +7,18 @@
     transition: all 300ms linear;
 }
 
+.opacity-70 {
+    opacity: 70%;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
 .z-10 {
     z-index: 10;
 }
@@ -36,6 +48,16 @@
     padding-right: 24px;
 }
 
+.px-26 {
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .p-24 {
     padding: 24px;
 }
@@ -44,8 +66,16 @@
     padding: 1px;
 }
 
+.pb-56 {
+    padding-bottom: 56px !important;
+}
+
 .mt-40 {
     margin-top: 40px;
+}
+
+.mt-32 {
+    margin-top: 32px;
 }
 
 .text-sm {
@@ -75,6 +105,14 @@
     min-width: 779px;
 }
 
+.min-w-551 {
+    min-width: 551px;
+}
+
+.max-w-1140 {
+    max-width: 1140px;
+}
+
 .max-w-500 {
     max-width: 500px;
 }
@@ -83,8 +121,16 @@
     max-width: 764px;
 }
 
+.max-w-695 {
+    max-width: 695px;
+}
+
 .max-h-0 {
     max-height: 0;
+}
+
+.max-h-378 {
+    max-height: 378px;
 }
 
 .w-12 {
@@ -99,12 +145,20 @@
     background: linear-gradient(81.75deg, #18FF9E 0%, #1EA56C 126.43%);
 }
 
+.bg-light-orange {
+    background: #DA6015;
+}
+
 .border-off-green {
     border-color: #18F699 !important;
 }
 
 .border-light-gray {
     border-color: #272834 !important;
+}
+
+.border-medium-gray {
+    border-color: #0E0F1366 !important;
 }
 
 .text-dark-gray {
@@ -121,6 +175,10 @@
 
 .rounded-lg {
     border-radius: 8px;
+}
+
+.rounded-xl {
+    border-radius: 12px;
 }
 
 .rounded-2xl {
@@ -154,6 +212,35 @@
 
 .rotate-180 {
     transform: rotate(180deg);
+}
+
+.rotate-90 {
+    transform: rotate(-90deg);
+}
+
+.bottom-80 {
+    bottom: 80px;
+}
+
+.left-16 {
+    left: -16px;
+}
+
+.swiper-pagination-bullet {
+    opacity: 1 !important;
+    width: 26px !important;
+    height: 10px !important;
+    border: 1px solid #DA6015 !important;
+    background-color: transparent !important;
+    border-radius: 91px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #DA6015 !important;
+}
+
+.swiper-pagination {
+    bottom: 0px !important;
 }
 
 @media (min-width:576px) {
@@ -198,6 +285,15 @@
         padding-top: 64px;
         padding-bottom: 64px;
     }
+
+    .text-md-4xl {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .overflow-x-md-visible {
+        overflow-x: visible !important;
+    }
 }
 
 @media (min-width:992px) {
@@ -207,5 +303,10 @@
 
     .text-lg-left {
         text-align: left !important;
+    }
+
+    .text-lg-5xl {
+        font-size: 48px;
+        line-height: 55px;
     }
 }
