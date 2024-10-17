@@ -1,14 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import CounterClients from './components/counter/CounterClients';
-import CounterPlatform from './components/counter/CounterPlatform';
+import CountDown from './components/countDown/CountDown';
 
 
 function App() {
   return (
     <>
-      <CounterClients />
-      <CounterPlatform />
+      <CountDown />
     </>
   );
 }
