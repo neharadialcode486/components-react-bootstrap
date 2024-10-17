@@ -1,13 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import TabsAccordion from './components/tabs/TabsAccordion';
-import TabsCard from './components/tabs/TabsCard';
+import CounterClients from './components/counter/CounterClients';
+import CounterPlatform from './components/counter/CounterPlatform';
+
 
 function App() {
   return (
     <>
-      <TabsAccordion />
-      <TabsCard />
+      <CounterClients />
+      <CounterPlatform />
     </>
   );
 }
