@@ -1,10 +1,10 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import RoadmapThird from './components/RoadmapThird';
+import LottiePractice from './components/LottiePractice';
 
 function App() {
   return (
-    <RoadmapThird />
+    <LottiePractice/>
   );
 }
 
