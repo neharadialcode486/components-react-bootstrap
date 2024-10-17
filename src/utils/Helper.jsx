@@ -79,7 +79,7 @@ export const SWIPER_DATA2 = [
     },
     {
         title: "gandoras",
-        image: women,
+        image: swiper5,
     },
     {
         title: "caftans",
