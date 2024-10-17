@@ -18,7 +18,7 @@ const Icon = (props) => {
         ),
     }
     return (
-        <span className={`flex ${props.className}`}>
+        <span className={`d-flex ${props.className}`}>
             {props.iconName && iconList[props.iconName]}
         </span>
     )

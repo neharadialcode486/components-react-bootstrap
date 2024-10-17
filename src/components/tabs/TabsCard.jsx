@@ -25,13 +25,13 @@ const TabsCard = () => {
     return (
         <div className='bg-white lg:py-24 py-40 py-sm-56 py-md-64'>
             <div className="container my-2.5">
-                <h2 className='font-normal md:text-4xl text-3xl lg:text-5xl text-center'>Shop By <span className='font-bold'>Category</span></h2>
-                <p className='font-normal text-base opacity-70 max-w-[695px] w-full mx-auto text-center mt-4'>Explore our extensive collection of traditional Moroccan garments, each crafted with care and precision to bring you the finest in cultural fashion.</p>
-                <div className="overflow-x-scroll md:overflow-x-visible w-full mt-8 p-2">
-                    <div className="min-w-[551px] relative z-10 w-fit mx-auto flex md:justify-center items-center gap-2.5 border-medium-gray border rounded-full p-2.5">
+                <h2 className='font-normal md:text-4xl text-3xl lg:text-5xl text-center'>Shop By <span className='fw-bold'>Category</span></h2>
+                <p className='font-normal text-base opacity-70 max-w-[695px] w-100 mx-auto text-center mt-4'>Explore our extensive collection of traditional Moroccan garments, each crafted with care and precision to bring you the finest in cultural fashion.</p>
+                <div className="overflow-x-scroll md:overflow-x-visible w-100 mt-8 p-2">
+                    <div className="min-w-[551px] position-relative z-10 w-fit mx-auto d-flex md:justify-content-center align-items-center gap-2.5 border-medium-gray border rounded-full p-2.5">
                         {TABS_SWIPER.map((tab, idx) => (
                             <a href={`/${tab.title.toLowerCase()}`} key={idx}
-                                className={`px-[26px] py-2.5 font-bold rounded-full text-base relative ${activeTab === idx ? "bg-light-orange text-white" : "bg-transparent"}`}
+                                className={`px-[26px] py-2.5 fw-bold rounded-full text-base position-relative ${activeTab === idx ? "bg-light-orange text-white" : "bg-transparent"}`}
                                 onClick={(e) => {
                                     e.preventDefault();
                                     setActiveTab(idx);
@@ -42,7 +42,7 @@ const TabsCard = () => {
                         ))}
                     </div>
                 </div>
-                <div className="max-w-[1140px] mx-auto mt-10 w-full">
+                <div className="max-w-[1140px] mx-auto mt-40 w-100">
                     <Swiper className='!pb-14'
                         spaceBetween={20}
                         slidesPerView={1}
@@ -64,8 +64,8 @@ const TabsCard = () => {
                     >
                         {TABS_SWIPER[activeTab]?.tabsContent?.map((items, idx) => (
                             <SwiperSlide key={idx}>
-                                <div className="overflow-hidden w-full rounded-xl relative h-full max-h-[378px]">
-                                    <img src={items.image} alt="djellabas" className='w-full h-full' />
+                                <div className="overflow-hidden w-100 rounded-xl position-relative h-full max-h-[378px]">
+                                    <img src={items.image} alt="djellabas" className='w-100 h-full' />
                                     <p className='font-semibold text-3xl absolute capitalize bottom-20 -left-4 z-10 -rotate-90 text-white'>{items.title}</p>
                                 </div>
                             </SwiperSlide>
