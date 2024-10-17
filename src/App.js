@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import CountDown from './components/countDown/CountDown';
+import SideBar from './components/sidebar/SideBar';
 
 
 function App() {
   return (
-    <>
-      <CountDown />
-    </>
+    <div className='max-w-[1920px] mx-auto position-relative'>
+      <SideBar />
+    </div>
   );
 }
 
