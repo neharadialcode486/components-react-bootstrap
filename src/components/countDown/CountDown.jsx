@@ -38,7 +38,7 @@ const CountDown = () => {
     const { tens: secondsTens, units: secondsUnits } = getTensAndUnits(timeLeft.seconds || 0);
 
     return (
-        <div className='bg-off-pink py-56 position-relative'>
+        <div className='bg-off-pink py-56 position-relative overflow-hidden'>
             <div className="container min-h-598 d-flex align-items-center">
                 <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
                     <div className="max-w-456 w-100">
@@ -46,8 +46,8 @@ const CountDown = () => {
                         <p className="fw-normal text-center text-lg-left opacity-70 text-base mt-3">
                             Don't miss out on our exclusive daily deals! Enjoy significant discounts on select traditional Moroccan garments.
                         </p>
-                        <div className="mt-28 d-flex mx-auto mx-lg-0 gap-2 w-fit">
-                            <div className="position-relative w-50 w-sm-60 w-md-72 text-center">
+                        <div className="mt-28 d-flex mx-auto align-items-start mx-lg-0 gap-2 w-fit">
+                            <div className="position-relative d-flex  text-center">
                                 <AnimatePresence mode="wait">
                                     <motion.p
                                         key={hoursTens}
@@ -56,7 +56,7 @@ const CountDown = () => {
                                         animate="animate"
                                         exit="exit"
                                         transition={{ duration: 0.4 }}
-                                        className="absolute -left-2.5 sm:-left-3 md:-left-5 w-100 font-medium text-3xl text-sm-4xl md:text-[55px] text-center"
+                                        className=" w-100 fw-medium text-3xl text-sm-4xl text-md-55 text-center"
                                     >
                                         {hoursTens}
                                     </motion.p>
@@ -69,14 +69,14 @@ const CountDown = () => {
                                         animate="animate"
                                         exit="exit"
                                         transition={{ duration: 0.4 }}
-                                        className="absolute w-100 -right-2.5 sm:-right-3 md:-right-5 font-medium text-3xl text-sm-4xl md:text-[55px] text-center"
+                                        className=" fw-medium text-3xl text-sm-4xl text-md-55 text-center"
                                     >
                                         {hoursUnits}
                                     </motion.p>
                                 </AnimatePresence>
                             </div>
-                            <p className="font-medium text-3xl text-sm-4xl md:text-[55px]">:</p>
-                            <div className="position-relative w-[50px] sm:w-[60px] md:w-[72px] text-center">
+                            <p className="fw-medium text-3xl mb-0 text-sm-4xl text-md-55">:</p>
+                            <div className="position-relative d-flex  text-center">
                                 <AnimatePresence mode="wait">
                                     <motion.p
                                         key={minutesTens}
@@ -85,7 +85,7 @@ const CountDown = () => {
                                         animate="animate"
                                         exit="exit"
                                         transition={{ duration: 0.4 }}
-                                        className="absolute -left-2.5 sm:-left-3 md:-left-5 w-100 font-medium text-3xl text-sm-4xl md:text-[55px] text-center"
+                                        className=" w-100 fw-medium text-3xl text-sm-4xl text-md-55 text-center"
                                     >
                                         {minutesTens}
                                     </motion.p>
@@ -98,14 +98,14 @@ const CountDown = () => {
                                         animate="animate"
                                         exit="exit"
                                         transition={{ duration: 0.4 }}
-                                        className="absolute w-100 -right-2.5 sm:-right-3 md:-right-5 font-medium text-3xl text-sm-4xl md:text-[55px] text-center"
+                                        className=" fw-medium text-3xl text-sm-4xl text-md-55 text-center"
                                     >
                                         {minutesUnits}
                                     </motion.p>
                                 </AnimatePresence>
                             </div>
-                            <p className="font-medium text-3xl text-sm-4xl md:text-[55px]">:</p>
-                            <div className="position-relative w-[50px] sm:w-[60px] md:w-[72px] text-center">
+                            <p className="fw-medium text-3xl mb-0 text-sm-4xl text-md-55">:</p>
+                            <div className="position-relative d-flex  text-center">
                                 <AnimatePresence mode="wait">
                                     <motion.p
                                         key={secondsTens}
@@ -114,7 +114,7 @@ const CountDown = () => {
                                         animate="animate"
                                         exit="exit"
                                         transition={{ duration: 0.4 }}
-                                        className="absolute -left-2.5 sm:-left-3 md:-left-5 w-100 font-medium text-3xl text-sm-4xl md:text-[55px] text-center"
+                                        className=" w-100 fw-medium text-3xl text-sm-4xl text-md-55 text-center"
                                     >
                                         {secondsTens}
                                     </motion.p>
@@ -127,21 +127,21 @@ const CountDown = () => {
                                         animate="animate"
                                         exit="exit"
                                         transition={{ duration: 0.4 }}
-                                        className="absolute -right-2.5 sm:-right-3 md:-right-5 w-100 font-medium text-3xl text-sm-4xl md:text-[55px] text-center"
+                                        className="absolute -right-2.5 sm:-right-3 md:-right-5 w-100 fw-medium text-3xl text-sm-4xl text-md-55 text-center"
                                     >
                                         {secondsUnits}
                                     </motion.p>
                                 </AnimatePresence>
                             </div>
                         </div>
-                        <div className="d-flex sm:mt-4 lg:mt-7 align-items-center mx-auto lg:mx-0 w-fit">
-                            <p className="font-semibold text-lg ml-3">Hours</p>
-                            <p className="font-semibold text-lg mx-4 sm:ml-9 sm:mr-6">Minutes</p>
-                            <p className="font-semibold text-lg">Seconds</p>
+                        <div className="d-flex mt-sm-2 align-items-center mx-auto mx-lg-0 w-fit">
+                            <p className="fw-semibold text-lg ml-3">Hours</p>
+                            <p className="fw-semibold text-lg mx-4 ms-sm-5 me-sm-4">Minutes</p>
+                            <p className="fw-semibold text-lg pe-lg-2">Seconds</p>
                         </div>
-                        <button className='mt-10 mx-auto lg:mx-0 block fw-bold text-sm sm:text-base text-white px-3 sm:px-6 py-2 sm:py-3.5 bg-off-red rounded-lg duration-300 ease-linear hover:bg-white hover:text-off-red'>Shop Now</button>
+                        <button className='mx-auto mx-lg-0 d-block fw-bold text-sm text-sm-base btn-shop text-white bg-off-red transition'>Shop Now</button>
                     </div>
-                    <img src={women} alt="women" className="lg:top-1/2 mt-6 lg:mt-0 lg:-translate-y-1/2 lg:right-0 lg:absolute w-100 lg:w-1/2" />
+                    <img src={women} alt="women" className="top-lg-50 mt-4 mt-lg-0 translate-middle-lg-y right-lg-0 position-lg-absolute w-100 w-lg-50" />
                 </div>
             </div>
         </div>

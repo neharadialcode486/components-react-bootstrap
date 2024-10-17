@@ -19,10 +19,6 @@
     width: fit-content;
 }
 
-.w-50 {
-    width: 50px;
-}
-
 .py-56 {
     padding-top: 56px;
     padding-bottom: 56px;
@@ -53,14 +49,31 @@
     line-height: 24px;
 }
 
+.btn-shop {
+    padding: 8px 12px;
+    background-color: #DA6015;
+    border-radius: 8px;
+    border: none !important;
+}
+
+.btn-shop:hover {
+    background: white;
+    color: #DA6015 !important;
+}
+
 @media (min-width:576px) {
     .text-sm-4xl {
         font-size: 36px;
         line-height: 42px;
     }
 
-    .w-sm-60 {
-        width: 60px;
+    .text-sm-base {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .btn-shop {
+        padding: 14px 24px;
     }
 }
 
@@ -70,13 +83,34 @@
         line-height: 55px;
     }
 
-    .w-md-72 {
-        width: 72px;
+    .text-md-55 {
+        font-size: 55px;
+        line-height: 65px;
     }
 }
 
 @media (min-width:992px) {
     .text-lg-left {
         text-align: left !important;
+    }
+
+    .top-lg-50 {
+        top: 50%;
+    }
+
+    .translate-middle-lg-y {
+        transform: translateY(-50%);
+    }
+
+    .right-lg-0 {
+        right: 0;
+    }
+
+    .position-lg-absolute {
+        position: absolute;
+    }
+
+    .w-lg-50 {
+        width: 50% !important;
     }
 }
