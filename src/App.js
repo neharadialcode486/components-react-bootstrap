@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Faq from './components/accordion/Faq';
-import FaqImage from './components/accordion/FaqImage';
+import TabsAccordion from './components/tabs/TabsAccordion';
+import TabsCard from './components/tabs/TabsCard';
 
 function App() {
   return (
     <>
-      <Faq />
-      <FaqImage />
+      <TabsAccordion />
+      <TabsCard />
     </>
   );
 }

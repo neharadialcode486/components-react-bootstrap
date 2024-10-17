@@ -1,13 +1,24 @@
 const Icon = (props) => {
     const iconList = {
-        downIcon: (
-            <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.89125 0.509098C2.23875 -0.165902 1.15875 -0.165901 0.506249 0.486599C-0.16875 1.1616 -0.16875 2.2191 0.506249 2.8716L8.31374 10.7241C8.62874 11.0391 9.05624 11.2191 9.50624 11.2191C9.95623 11.2191 10.3837 11.0391 10.6987 10.7241L18.5062 2.8716C18.8437 2.5566 19.0012 2.1291 19.0012 1.7016C19.0012 1.2516 18.8437 0.824099 18.5062 0.486599C17.8312 -0.165901 16.7737 -0.165902 16.1212 0.509098L9.50624 7.1466L2.89125 0.509098Z" fill="#3C278D" />
-            </svg >
+        plusIcon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z" fill="url(#paint0_linear_3078_61)" />
+                <path d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V6C11.25 5.59 11.59 5.25 12 5.25C12.41 5.25 12.75 5.59 12.75 6V18C12.75 18.41 12.41 18.75 12 18.75Z" fill="url(#paint1_linear_3078_61)" />
+                <defs>
+                    <linearGradient id="paint0_linear_3078_61" x1="5.25" y1="12.75" x2="12.482" y2="3.31464" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#18FF9E" />
+                        <stop offset="1" stopColor="#1EA56C" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_3078_61" x1="11.25" y1="18.75" x2="13.4208" y2="18.715" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#18FF9E" />
+                        <stop offset="1" stopColor="#1EA56C" />
+                    </linearGradient>
+                </defs>
+            </svg>
         ),
     }
     return (
-        <span className={`d-flex ${props.className}`}>
+        <span className={`flex ${props.className}`}>
             {props.iconName && iconList[props.iconName]}
         </span>
     )
