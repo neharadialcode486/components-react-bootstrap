@@ -51,28 +51,28 @@ const CounterPlatform = () => {
     }, [hasAnimated]);
 
     return (
-        <div ref={sectionRef} className="lg:py-24 sm:py-20 py-64 bg-off-gray position-relative">
+        <div ref={sectionRef} className="py-64 bg-off-gray position-relative">
             <div className="container position-relative z-10">
-                <p className="mx-auto w-fit text-off-blue font-inter uppercase font-medium text-sm sm:text-base">Platform</p>
-                <h2 className='text-center mt-1 sm:mt-2 md:text-4xl text-3xl text-lg-40 font-normal'>Through <span className='font-semibold'>Our Platform</span></h2>
-                <p className='max-w-[710px] mx-auto font-normal text-base opacity-70 text-center mt-1 sm:mt-4'>We’ve helped our partners and patients achieve</p>
-                <div className="lg:mt-14 sm:mt-8 pt-3 md:pt-1 max-w-[861px] w-full flex flex-row flex-wrap md:flex-nowrap justify-center md:justify-between mx-auto md:gap-4">
+                <p className="mx-auto w-fit text-off-blue  text-uppercase fw-medium text-sm text-sm-base">Platform</p>
+                <h2 className='text-center mt-1 mt-sm-2 text-md-4xl text-3xl text-lg-40 fw-normal'>Through <span className='fw-semibold'>Our Platform</span></h2>
+                <p className='max-w-710 mx-auto fw-normal text-base opacity-70 text-center mt-1 mt-sm-2'>We’ve helped our partners and patients achieve</p>
+                <div className="mt-lg-56 mt-sm-32 pt-1 max-w-861 w-100 d-flex flex-row flex-wrap flex-md-nowrap justify-content-center justify-content-md-between mx-auto gap-md-2">
                     {PLATFORM_DATA.map((item, idx) => (
-                        <div key={idx} className="flex justify-center px-3 mt-6 md:mt-0 w-full md:px-0">
-                            <div className={`max-w-[268px] position-relative rounded w-full min-h-[207px] p-5 flex flex-col items-center justify-center ${idx === 0 ? "bg-light-green" : idx === 1 ? "bg-light-blue" : "bg-off-blue"}`}>
-                                <p className={`font-inter text-5xl font-semibold text-white ${idx === 0 ? "lg:text-custom-4xl lg:leading-custom-4xl" : "lg:text-custom-2xl lg:leading-custom-2xl"}`}>
+                        <div key={idx} className="d-flex justify-content-center px-3 mt-4 mt-md-0 w-100 px-md-0">
+                            <div className={`max-w-268 position-relative z-10 rounded w-100 min-h-207 p-3 d-flex flex-column align-items-center justify-content-center ${idx === 0 ? "bg-light-green" : idx === 1 ? "bg-light-blue" : "bg-off-blue"}`}>
+                                <p className={`text-5xl fw-semibold position-relative z-10 mb-0 text-white ${idx === 0 ? "text-custom-lg-4xl" : "text-custom-lg-2xl"}`}>
                                     {percentages[idx]}%
                                 </p>
-                                <p className={`font-inter font-normal text-white opacity-80 text-lg sm:text-xl text-center ${idx === 1 ? "max-w-[184px] mt-2" : "max-w-[150px]"} ${idx === 2 ? "mt-1" : ""}`}>
+                                <p className={`fw-normal text-white position-relative z-10 mb-0 opacity-70 text-lg text-sm-xl text-center ${idx === 2 ? "mt-1" : ""}`}>
                                     {item.text}
                                 </p>
-                                <img src={whiteEllipse} className='w-[98px] h-[88px] absolute bottom-0 right-0' alt='ellipse' />
+                                <img src={whiteEllipse} className='w-98 h-88 position-absolute bottom-0 end-0' alt='ellipse' />
                             </div>
                         </div>
                     ))}
                 </div>
             </div>
-            <img src={ellipse} className='absolute top-0 hidden sm:flex right-0' alt='ellipse' />
+            <img src={ellipse} className='position-absolute top-0 d-none d-sm-flex end-0' alt='ellipse' />
         </div>
     );
 };
