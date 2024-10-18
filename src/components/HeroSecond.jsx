@@ -11,7 +11,7 @@ import HeroTwoBottomRightSecImg from '../assets/images/png/hero-2-bottom-right-s
 
 const HeroSection = () => {
   return (
-    <section className="d-flex position-relative align-items-center justify-content-center min-vh-100">
+    <div className="d-flex position-relative align-items-center justify-content-center min-vh-100">
       <div className="position-absolute top-0 start-0">
         <div className="position-relative">
           <img
@@ -49,8 +49,8 @@ const HeroSection = () => {
           nec facilisis risus malesuada arcu cum.
         </p>
         <div className="d-flex gap-4 flex-wrap mt-30 btn-div">
-          <button className="hero-2-btn fw-semibold">Button</button>
-          <button className="hero-2-btn fw-semibold">Button</button>
+          <button className="hero-btn fw-semibold">Button</button>
+          <button className="hero-btn fw-semibold">Button</button>
         </div>
       </div>
       <div className="position-absolute bottom-6 start-0">
@@ -81,7 +81,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

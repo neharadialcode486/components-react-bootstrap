@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="hero-6-section min-vh-100 d-flex justify-content-center align-items-center">
+    <div className="hero-6-section min-vh-100 d-flex justify-content-center align-items-center">
       <div className="px-3">
         <div className="hero-6-content">
           <h1 className="hero-6-heading fw-normal">
@@ -17,7 +17,7 @@ const HeroSection = () => {
           </btn>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

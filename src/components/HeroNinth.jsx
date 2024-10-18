@@ -7,7 +7,7 @@ import HeroBottomNineCubeShadow from '../assets/images/svg/hero-9-cube-shadow.sv
 import HeroBottomTopCircle from '../assets/images/svg/hero-9-top-circle.svg'
 const HeroSection = () => {
   return (
-    <section className="min-vh-100 px-3 overflow-hidden position-relative bg-light-black d-flex align-items-center justify-content-center">
+    <div className="min-vh-100 px-3 overflow-hidden position-relative bg-light-black d-flex align-items-center justify-content-center">
       <div className="z-2 container position-relative w-100">
         <h1 className="hero-9-heading fw-bold text-white text-start">Build the Future</h1>
         <h1 className="text-lg-end hero-9-heading text-white fw-bold">
@@ -30,7 +30,7 @@ const HeroSection = () => {
       <img src={HeroBottomNineCube} alt="cube" className="position-absolute pointer-event-none hero-9-cube start-0 z-1" />
       <img src={HeroBottomNineCubeShadow} alt="cube" className="position-absolute hero-9-cube-shadow-top start-0 z-1 pointer-event-none" />
       <img src={HeroBottomTopCircle} alt="circle" className="position-absolute top-0 end-0 pointer-event-none z-1" />
-    </section>
+    </div>
   );
 };
 

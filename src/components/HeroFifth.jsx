@@ -3,7 +3,7 @@ import Flower from '../assets/images/png/hero-5-flower-img.png'
 import HeroFifthImg from '../assets/images/png/hero-5-2nd-img.png'
 const HeroSection = () => {
     return (
-        <section className="d-flex py-3 justify-content-center align-items-center min-vh-100">
+        <div className="d-flex py-3 justify-content-center align-items-center min-vh-100">
             <div className='container'>
                 <div className="row row-gap-4">
                     <div className="col-lg-5 col-12">
@@ -13,7 +13,7 @@ const HeroSection = () => {
                             bibendum suspendisse quam. Hac posuere eget nam diam velit urna adipiscing diam. Dis velit nam vitae
                             hendrerit at egestas. Tellus velit turpis at sed lorem vitae sed.
                         </p>
-                        <button className="hero-5-btn fw-semibold" variant="outline-primary">
+                        <button className="hero-btn fw-semibold" variant="outline-primary">
                             Button
                         </button>
                     </div>
@@ -28,7 +28,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 

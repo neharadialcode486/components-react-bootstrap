@@ -5,7 +5,7 @@ import Vehical from  '../assets/images/png/vehical-img.png'
 
 const HeroSection = () => {
   return (
-    <section className="position-relative hero-7-section py-3 overflow-hidden min-vh-100 d-flex justify-content-center align-items-center">
+    <div className="position-relative hero-7-section py-3 overflow-hidden min-vh-100 d-flex justify-content-center align-items-center">
       <div className='container'>
         <div className="row-gap-4 row flex-lg-nowrap">
           <div className="d-flex col-lg-6 justify-content-center align-items-center align-items-lg-start flex-column">
@@ -32,7 +32,7 @@ const HeroSection = () => {
 
       <img src={EllipseImg} alt="ellipse" className="position-absolute ellipse-img pointer-event-none" />
       <img src={EllpiseShadow} alt="shadow" className="position-absolute bottom-0 start-0 pointer-event-none" />
-    </section>
+    </div>
   );
 };
 

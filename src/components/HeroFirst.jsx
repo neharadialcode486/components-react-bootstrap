@@ -3,7 +3,7 @@ import HeroFirstImg from '../assets/images/png/hero-image.png'
 
 const HeroFirst = () => {
   return (
-    <section className="min-vh-100 d-flex overflow-hidden align-items-center justify-content-center py-lg-4 px-4 px-lg-0 py-3">
+    <div className="min-vh-100 d-flex overflow-hidden align-items-center justify-content-center py-lg-4 px-4 px-lg-0 py-3">
     <div  className='container'>
       <div className="row row-gap-4">
         <div className="d-flex col-lg-6 col-12 flex-column justify-content-center">
@@ -25,7 +25,7 @@ const HeroFirst = () => {
         </div>
       </div>
     </div>
-  </section>
+  </div>
   )
 }
 
