@@ -58,7 +58,7 @@ const Header = () => {
                     </a>
                 </div>
             </div>
-            <div onClick={() => setOpen(!open)} className="position-fixed w-56 h-40 bg-white top-0 left-0 d-sm-none z-150 d-grid place-items-center border-light-gray">
+            <div onClick={() => setOpen(!open)} className="position-fixed w-56 h-40 bg-white top-0 start-0 d-sm-none z-150 d-grid place-items-center border-light-gray">
                 {open ? "Close" : "Menu"}
             </div>
         </div>

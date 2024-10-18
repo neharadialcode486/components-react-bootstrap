@@ -8,17 +8,17 @@ import { SWIPER_DATA } from '../../utils/Helper';
 
 const DataSwiper = () => {
     return (
-        <div className='mt-7 position-relative w-100'>
-            <div className="d-flex w-100 justify-content-between mb-6">
+        <div className='mt-5 position-relative w-100'>
+            <div className="d-flex w-100 justify-content-between mb-4">
                 <h2 className='fw-bold text-2xl'>Recommended for you</h2>
                 <div className="d-flex align-items-center gap-2 position-relative">
-                    <Icon className="hover:scale-95 swiper-button-next !top-auto !position-relative !right-auto !w-8 !h-8 cursor-pointer hover:bg-white transition hover:border-off-yellow rounded-full border border-[#BBBAB6]" iconName='rightArrowIcon' />
-                    <Icon className="hover:scale-95 swiper-button-prev !top-auto !position-relative !left-auto rotate-180 cursor-pointer !w-8 !h-8 hover:bg-white transition hover:border-off-yellow rounded-full border border-[#BBBAB6]" iconName='rightArrowIcon' />
+                    <Icon className="swiper-button-next position-relative cursor-pointer transition rounded-full" iconName='rightArrowIcon' />
+                    <Icon className="swiper-button-prev top-auto position-relative cursor-pointer transition rounded-full" iconName='rightArrowIcon' />
                 </div>
             </div>
             <div className=" w-100">
                 <Swiper
-                    className='!pb-14'
+                    className='pb-56'
                     spaceBetween={20}
                     slidesPerView={1}
                     loop={true}
@@ -43,19 +43,19 @@ const DataSwiper = () => {
                 >
                     {SWIPER_DATA.map((items, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="position-relative overflow-hidden rounded-lg w-100 h-100 min-h-[292px] bg-white">
+                            <div className="position-relative overflow-hidden rounded-lg w-100 h-100 min-h-317 bg-white">
                                 <div className="position-relative overflow-hidden">
-                                    <img src={items.img} alt={items.img} className='w-100 position-relative z-10 hover:scale-110 transition' />
+                                    <img src={items.img} alt={items.img} className='w-100 position-relative z-10' />
                                 </div>
-                                <div className="bg-white w-100 -mt-0.5 p-6">
-                                    <h2 className='mt-0.5 text-base leading-4 fw-bold min-h-8'>{items.title}</h2>
-                                    <div className="d-flex align-items-center gap-2.5 mt-4">
+                                <div className="bg-white w-100 p-4">
+                                    <h2 className='mt-1 text-base lh-16 mb-0 fw-bold min-h-32'>{items.title}</h2>
+                                    <div className="d-flex align-items-center gap-2 mt-3">
                                         <Icon iconName='clockIcon' />
-                                        <p className='fw-normal text-xs'>Online</p>
+                                        <p className='fw-normal mb-0 text-xs'>Online</p>
                                     </div>
-                                    <div className="d-flex align-items-center gap-2.5 mb-4 mt-2">
+                                    <div className="d-flex align-items-center gap-2 mb-3 mt-1">
                                         <Icon iconName='locationIcon' />
-                                        <p className='fw-normal text-xs'>80000</p>
+                                        <p className='fw-normal mb-0 text-xs'>80000</p>
                                     </div>
                                 </div>
                             </div>
