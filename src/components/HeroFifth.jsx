@@ -20,7 +20,6 @@ const HeroSection = () => {
 
                     <div  className="col-12 col-lg-7 d-flex justify-content-center align-items-center min-h-527">
                         <div className="absolute-5-div h-100 position-relative">
-
                             {/* Flower image */}
                             <img src={Flower} alt="flower" className="flower-img" />
                             <img src={HeroFifthImg} alt="hero-5-2nd-img" className="absolute-5-img position-absolute" />

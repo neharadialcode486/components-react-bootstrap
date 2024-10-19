@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <div className="hero-6-section min-vh-100 d-flex justify-content-center align-items-center">
-      <div className="px-3">
+      <div className="container px-3">
         <div className="hero-6-content">
           <h1 className="hero-6-heading fw-normal">
             Build the Future.

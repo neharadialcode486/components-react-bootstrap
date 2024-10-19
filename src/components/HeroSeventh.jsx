@@ -23,9 +23,8 @@ const HeroSection = () => {
               Start Your Project
             </button>
           </div>
-
           <div>
-            <img className="pointer-event-none col-lg-6 vehical-img" src={Vehical} alt="Vehical-img" />
+            <img className="pointer-event-none  col-lg-6 vehical-img" src={Vehical} alt="Vehical-img" />
           </div>
         </div>
       </div>

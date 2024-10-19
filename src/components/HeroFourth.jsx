@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="min-vh-100 d-flex pt-96 pt-md-72 pt-sm-48 justify-content-center align-items-center">
       <div className="d-flex container flex-column justify-content-around align-items-center">
        
-        <h1 className="hero-4-heading fw-bold">Lorem ipsum Lorem ipsum</h1>
+        <h1 className="hero-4-heading mb-0 fw-bold">Lorem ipsum Lorem ipsum</h1>
         
         <div className="hero-4-text-info mx-auto">
       
@@ -15,9 +15,7 @@ const HeroSection = () => {
             bibendum suspendisse quam. Hac posuere eget nam diam velit urna adipiscing diam.
           </p>
         </div>
-        
-      
-        <button className='hero-btn fw-semibold'>
+        <button className='hero-btn hero-4-btn fw-semibold'>
           Button
         </button>
         
