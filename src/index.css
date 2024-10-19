@@ -1,0 +1,16 @@
+.top-scroll {
+    position: fixed;
+    z-index: 40;
+    bottom: 20px;
+    right: 20px;
+    background-color: aquamarine;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-scroll:hover {
+    box-shadow: 0px 0px 20px black;
+}
