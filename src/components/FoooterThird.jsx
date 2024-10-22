@@ -14,7 +14,7 @@ const FooterThird = () => {
                         <a href="/"><img className="mb-4 max-lg-top" src={FooterThreeLogo}
                             alt="sigma logo" /></a>
                         <h5 className="fs-4 fw-semibold mb-3">Quam tincidunt tellus pellentesque</h5>
-                        <p className="muted-gray about-text mb-4">Lorem ipsum dolor sit amet consectetur. Quam tincidunt tellus
+                        <p className="muted-gray about-text-3 mb-4">Lorem ipsum dolor sit amet consectetur. Quam tincidunt tellus
                             pellentesque vitae augue pellentesque tellus. dolor sit amet consectetur Quam tincidunt.</p>
                         <div className="gap-3 d-flex mb-4">
                             <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
