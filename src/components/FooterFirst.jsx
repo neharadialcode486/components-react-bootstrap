@@ -52,7 +52,7 @@ const FooterFirst = () => {
                                 us
                                 now</a>
                             <div className="d-flex gap-3 mt-3">
-                                <a href="https://www.twiteer.com/" target="_blank"><img className="" src={FooterOneTwitter} alt="twitter" /></a>
+                                <a className='d-flex ' href="https://www.twiteer.com/" target="_blank"><img className="" src={FooterOneTwitter} alt="twitter" /></a>
                                 <a href="https://www.facebook.com/" target="_blank"><img className="" src={FooterOneFacebook} alt="facebook" /></a>
                                 <div className="bg-icon d-flex align-items-center justify-content-center">
                                     <a href="https://www.facebook.com/" target="_blank"><img className="" src={FooterOneBeIcon} alt="be-icon" /></a>
