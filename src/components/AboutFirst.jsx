@@ -2,7 +2,7 @@ import React from 'react';
 
 export const AboutFirst = () => {
   return (
-    <section className="min-vh-100 d-flex align-items-center justify-content-center">
+    <section className="min-vh-100  d-flex align-items-center justify-content-center">
       <div className="bg-img">
         <div className="container">
           <h3 className="text-center main-heading fw-semibold mb-3">Lorem ipsum</h3>
