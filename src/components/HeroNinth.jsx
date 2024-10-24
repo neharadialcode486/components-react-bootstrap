@@ -9,13 +9,13 @@ const HeroSection = () => {
   return (
     <div className="min-vh-100 px-3 overflow-hidden position-relative bg-light-black d-flex align-items-center justify-content-center">
       <div className="z-2 container position-relative w-100">
-        <h1 className="hero-9-heading fw-bold text-white text-start">Build the Future</h1>
-        <h1 className="text-lg-end hero-9-heading text-white fw-bold">
+        <h1 className="hero-9-heading fw-bold text-white mb-0 text-start">Build the Future</h1>
+        <h1 className="text-lg-end mb-0 hero-9-heading text-white fw-bold">
           Deliver <span className="hero-9-color-heading">Today.</span>
         </h1>
-        <div className="w-100 box d-flex row-gap-3 justify-content-md-between flex-column flex-md-row">
+        <div className="w-100 box d-flex row-gap-3 justify-content-md-between align-items-center flex-column flex-md-row">
           <div className="text-9-info-div">
-            <p className="hero-9-text-info">
+            <p className="hero-9-text-info mb-0">
               Innovative Concrete Logistics - Revolutionizing concrete delivery for commercial and residential projects in Houston, San Antonio, Austin, and Dallas.
             </p>
           </div>

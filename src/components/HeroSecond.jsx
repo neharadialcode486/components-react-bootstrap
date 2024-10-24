@@ -42,8 +42,8 @@ const HeroSection = () => {
       </div>
       <div className="hero-2-content-div position-relative z-3 d-flex align-items-center justify-content-center flex-column mx-auto w-100">
         <p className="hero-2-sub-heading fw-normal text-center mb-0 text-black">A nice headline</p>
-        <h1 className="hero-2-heading fw-semibold mb-2 text-center">Goes here</h1>
-        <p className="hero-2-text-info text-center">
+        <h1 className="hero-2-heading fw-semibold mb-2 text-black text-center">Goes here</h1>
+        <p className="hero-2-text-info mb-0 text-center">
           Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate
           elementum arcu donec. Feugiat nibh ullamcorper egestas lectus risus ornare ullamcorper fames. Cursus libero
           nec facilisis risus malesuada arcu cum.

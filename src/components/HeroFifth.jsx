@@ -13,14 +13,13 @@ const HeroSection = () => {
                             bibendum suspendisse quam. Hac posuere eget nam diam velit urna adipiscing diam. Dis velit nam vitae
                             hendrerit at egestas. Tellus velit turpis at sed lorem vitae sed.
                         </p>
-                        <button className="hero-btn fw-semibold" variant="outline-primary">
+                        <button className="hero-btn mt-3 fw-semibold" variant="outline-primary">
                             Button
                         </button>
                     </div>
 
                     <div  className="col-12 col-lg-7 d-flex justify-content-center align-items-center min-h-527">
                         <div className="absolute-5-div h-100 position-relative">
-                            {/* Flower image */}
                             <img src={Flower} alt="flower" className="flower-img" />
                             <img src={HeroFifthImg} alt="hero-5-2nd-img" className="absolute-5-img position-absolute" />
                         </div>
