@@ -3,13 +3,10 @@ import HeroFourthImg from '../assets/images/png/leaves.png'
 
 const HeroSection = () => {
   return (
-    <div className="min-vh-100 d-flex pt-96 pt-md-72 pt-sm-48 justify-content-center align-items-center">
+    <div className="min-vh-100 d-flex pt-96 pt-md-72 overflow-hidden pt-sm-0 justify-content-center align-items-center">
       <div className="d-flex container flex-column justify-content-around align-items-center">
-       
         <h1 className="hero-4-heading mb-0 fw-bold">Lorem ipsum Lorem ipsum</h1>
-        
         <div className="hero-4-text-info mx-auto">
-      
           <p className="text-center fw-normal">
             Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a
             bibendum suspendisse quam. Hac posuere eget nam diam velit urna adipiscing diam.

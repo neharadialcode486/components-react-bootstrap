@@ -7,8 +7,8 @@ const HeroSection = () => {
   return (
     <div className="position-relative hero-7-section py-3 overflow-hidden min-vh-100 d-flex justify-content-center align-items-center">
       <div className='container'>
-        <div className="row-gap-4 row flex-lg-nowrap">
-          <div className="d-flex col-lg-6 justify-content-center align-items-center align-items-lg-start flex-column">
+        <div className="row-gap-4 row flex-xl-nowrap">
+          <div className="d-flex col-xl-6 justify-content-center align-items-center align-items-lg-start flex-column">
             
             <h1 className="hero-7-heading text-center text-lg-start fw-normal">
               Build the Future.
@@ -24,11 +24,10 @@ const HeroSection = () => {
             </button>
           </div>
           <div>
-            <img className="pointer-event-none  col-lg-6 vehical-img" src={Vehical} alt="Vehical-img" />
+            <img className="pointer-event-none  col-xl-6 vehical-img" src={Vehical} alt="Vehical-img" />
           </div>
         </div>
       </div>
-
       <img src={EllipseImg} alt="ellipse" className="position-absolute ellipse-img pointer-event-none" />
       <img src={EllpiseShadow} alt="shadow" className="position-absolute bottom-0 start-0 pointer-event-none" />
     </div>

@@ -306,7 +306,7 @@
 
 
 .hero-4-heading {
-    line-height: 120%;
+    line-height: 150%;
     font-size: 58px;
     color: black;
 }
@@ -356,25 +356,30 @@
 
     .hero-4-btn {
         margin-bottom: 48px;
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
     .hero-4-text-info p {
-        margin-top: 8px;
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width: 576px) {
     .hero-4-heading {
         font-size: 38px;
+        text-align: center;
     }
 
     .hero-4-text-info p {
         font-size: 12px;
+        margin-top: 0;
+    }
+    .hero-4-btn{
+        margin-bottom: 30px;
     }
 
-    .pt-sm-48 {
-        padding-top: 48px;
+    .pt-sm-0 {
+        padding-top: 0px;
     }
 }
 
@@ -441,6 +446,12 @@
     .hero-5-text {
         margin: 10px 0px;
     }
+    .absolute-5-div {
+        transform: translateX( 0px);
+    }
+    .absolute-5-img {
+        right: 0;
+    }
 }
 
 @media (max-width:576px) {
@@ -488,7 +499,7 @@
 }
 
 .hero-6-btn {
-    padding: 11.5px 29px;
+    padding: 13.5px 29px;
     background-color: #46AD47;
     color: black;
     border-radius: 12px;
@@ -588,6 +599,13 @@
     right: 0%;
 }
 
+@media (max-width:1280px) {
+    .vehical-img {
+        width: 100%;
+        position: relative;
+    }
+}
+
 @media (max-width:992px) {
     .hero-7-heading {
         font-size: 56px;
@@ -596,15 +614,14 @@
     .hero-7-text {
         font-size: 14px;
     }
-
-    .vehical-img {
-        width: 100%;
-    }
 }
 
 @media (max-width:768px) {
     .hero-7-heading {
         font-size: 52px;
+    }
+    .hero-7-text {
+        margin-top: 8px;
     }
 }
 

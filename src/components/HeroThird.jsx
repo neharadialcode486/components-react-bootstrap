@@ -2,8 +2,8 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <div className="d-flex waves-bg-img align-items-center justify-content-center min-vh-100">
-      <div className="d-flex align-items-center flex-column w-100">
+    <div className="d-flex waves-bg-img align-items-center overflow-hidden justify-content-center min-vh-100">
+      <div className="d-flex container align-items-center flex-column w-100">
         <h1 className="fw-bold mb-3 text-center heading">
           Lorem ipsum Lorem ipsum
         </h1>
