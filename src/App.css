@@ -214,7 +214,7 @@
 
 .dot-img {
     max-width: 200px;
-    opacity: 70%;
+    opacity: 20%;
 }
 
 .arrow-icon {
@@ -259,6 +259,10 @@
         padding: 0px 96px;
     }
 
+    .w-sm-75 {
+        width: 75%;
+    }
+
     .max-w-sm-192 {
         max-width: 192px;
     }
@@ -273,6 +277,10 @@
 
     .h-sm-64 {
         height: 64px;
+    }
+
+    .text-sm-3xl {
+        font-size: 30px;
     }
 
     .text-sm-xl {
@@ -291,6 +299,10 @@
 @media (min-width:768px) {
     .px-md-120 {
         padding: 0px 120px;
+    }
+
+    .gap-md-20 {
+        gap: 20px !important;
     }
 
     .max-w-md-240 {

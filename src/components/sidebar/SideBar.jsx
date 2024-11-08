@@ -6,34 +6,40 @@ import { EVENTS_DATA } from '../../utils/Helper';
 import DataSwiper from './DataSwiper';
 
 const SideBar = () => {
+
     const [activeTab, setActiveTab] = useState(0);
     const [open, setOpen] = useState(false);
     const Data = ['Requirements', 'Events', 'Career event', 'Activities', 'Masterclasses']
+
     return (
         <div className='d-flex justify-content-between bg-dark-gray'>
             <Header activeTab={activeTab} setActiveTab={setActiveTab} open={open} setOpen={setOpen} />
             <div className="bg-off-yellow w-100 position-fixed max-w-1920 top-0 d-flex justify-content-end translate-middle-x start-50 h-840">
                 <img src={plus} alt="plus" className='dot-img' />
             </div>
-            <div className="p-lg-4 p-2 position-relative z-20 w-100 w-sm-83 overflow-hidden">
-                <h2 className='fw-bold text-3xl text-md-4xl mt-4 mt-sm-2'>Welcome back, Zareh 👋🏻</h2>
+            <div className="p-lg-4 p-3 position-relative z-20 w-100 w-sm-83 overflow-hidden">
+                <h2 className='fw-bold text-sm-3xl text-2xl pt-2 pt-sm-0 text-md-4xl mt-4 mt-sm-2'>Welcome back, Zareh 👋🏻</h2>
                 <p className='mt-3 fw-normal text-base'>Below you find your upcoming events, enrolled programmes and progress</p>
                 <div className="mt-5 flex-xl-row flex-column d-flex justify-content-between gap-20">
-                    <div className={`rounded-lg w-100 w-xl-58 bg-white p-2 p-lg-32 ${activeTab === 2 || activeTab === 3 ? "d-none" : ""}`}>
+                    <div className={`rounded-lg w-100 w-xl-58 bg-white p-3 p-lg-32 ${activeTab === 2 || activeTab === 3 ? "d-none" : ""}`}>
                         <h2 className='fw-bold text-2xl mb-4 mb-lg-5'>You have 3 upcoming events</h2>
                         {EVENTS_DATA.map((items, idx) => (
-                            <div key={idx} className="d-flex justify-content-between align-items-center mt-4 w-100">
+                            <div key={idx} className="d-flex justify-content-between align-items-sm-center mt-4 pt-2 w-100">
                                 <div className="d-flex flex-column align-items-center justify-content-center bg-black w-md-80 h-md-80 h-sm-64 w-56 h-56 w-sm-64 rounded-full">
                                     <p className='fw-black text-lg text-sm-xl mb-0 text-md-3xl text-white lh-sm'>{items.date}</p>
                                     <p className='fw-light text-xs text-sm-sm mb-0 text-md-lg text-white text-capitalize lh-sm'>{items.months}</p>
                                 </div>
                                 <div className="d-flex flex-column max-w-444 col-8 w-lg-100">
                                     <p className='fw-bold text-sm mb-0 text-md-base'>{items.title}</p>
-                                    <div className="d-flex align-items-center mt-2">
-                                        <Icon iconName='clockIcon' />
-                                        <p className='fw-normal text-xs mb-0 ms-1'>{items.time}</p>
-                                        <Icon className=' ms-2 ms-sm-4' iconName='locationIcon' />
-                                        <p className='fw-normal mb-0 text-xs ms-1'>{items.location}</p>
+                                    <div className="d-flex align-items-md-center flex-column flex-md-row mt-2">
+                                        <div className="d-flex align-items-center">
+                                            <Icon iconName='clockIcon' />
+                                            <p className='fw-normal text-xs mb-0 ms-1'>{items.time}</p>
+                                        </div>
+                                        <div className="d-flex align-items-center mt-1">
+                                            <Icon className='ms-md-4' iconName='locationIcon' />
+                                            <p className='fw-normal mb-0 text-xs ms-1'>{items.location}</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="/" className='justify-content-center align-items-center d-flex transition rounded-full arrow-icon'><Icon className='transition' iconName='rightArrowIcon' /></a>
