@@ -4,129 +4,156 @@
     font-family: "Inter", sans-serif;
 }
 
-/* common Class */
-.hero-btn {
-    padding: 11px 56px;
-    background-color: white;
-    border-radius: 12px;
-    color: #3C278D;
-    border: 1px solid #3C278D;
-    transition: all 300ms linear;
-    max-width: 164px;
-}
-
-.hero-btn:hover {
-    background-color: #3C278D;
-    color: white;
-}
-
 .container {
     max-width: 1140px !important;
 }
 
-/* Hero First  */
-.hero-first-image {
-    min-width: 976px;
-}
 
-.hero-subheading {
+/* ===================== HERO FIrst Section CSS CODE START  (15 TO  130)  ===================== */
+
+
+.hero-first-subheading {
     font-size: 32px;
-    padding-top: 34px;
 }
 
 .line-height-150 {
     line-height: 150%;
 }
 
-.hero-heading {
+.hero-first-heading {
     font-size: 64px;
 }
 
-.hero-text-info {
+.hero-first-text-info {
     color: #4D4D4D;
     font-size: 16px;
+    max-width: 543px;
 }
 
-.btn-div {
+.hero-first-button-parent {
     margin-top: 32px;
-}
-
-.pointer-event-none {
-    pointer-events: none;
-}
-
-
-.gap-19 {
     gap: 19px;
 }
 
-@media (max-width: 992px) {
-    .hero-first-image {
-        width: 90%;
-        max-width: 967px !important;
-        min-width: unset;
+.hero-first-btn {
+    padding: 11px 56px;
+    border-radius: 12px;
+    transition: all 300ms linear;
+    max-width: 164px;
+    border: 1px solid transparent;
+    background-color: #3C278D;
+    color: white;
+}
+
+.hero-first-btn:hover {
+    color: #3C278D;
+    border: 1px solid #3C278D;
+    background-color: white;
+}
+
+
+.hero-first-image {
+    transform: translateY(45px);
+}
+
+@media (max-width:1200px) {
+    .hero-first-container {
+     padding: 0px 24px !important;
     }
 
-    .hero-heading {
+}
+
+@media (max-width:992px) {
+    .hero-first-image {
+        width: 100%;
+        transform: translateY(0px);
+    }
+
+    .hero-first-heading {
         font-size: 56px;
     }
 
-    .hero-subheading {
+    .row{
+        gap: 30px !important;
+    }
+
+    .hero-first-subheading {
         font-size: 28px;
     }
 
-    .hero-text-info {
+    .hero-first-text-info {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .hero-first-btn{
         font-size: 14px;
     }
 }
 
-@media (max-width: 768px) {
-    .hero-heading {
+@media (max-width:768px) {
+
+    .hero-first-heading {
         font-size: 48px;
     }
 
-    .hero-subheading {
+    .hero-first-subheading {
         font-size: 24px;
     }
 
-    .hero-text-info {
+    .hero-first-text-info {
         font-size: 12px;
     }
 
-    .btn-div {
+    .hero-first-button-parent {
         margin-top: 24px;
+    }
+
+    .hero-first-btn {
+        padding: 9px 50px;
     }
 }
 
-@media (max-width: 576px) {
-    .hero-heading {
-        font-size: 46px;
+@media (max-width:576px) {
+
+    .hero-first-heading {
+        font-size: 36px;
     }
 
-    .hero-subheading {
+    .hero-first-subheading {
         font-size: 20px;
     }
 
-    .hero-btn {
+    .hero-first-btn {
         font-size: 14px;
     }
 }
 
 
 
-/*Hero Second CSS*/
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap');
+/* ===================== HERO Second Section CSS CODE START  ===================== */
 
-* {
-    font-family: "Inter", sans-serif;
+
+
+
+.hero-2-btn {
+    padding: 11px 56px;
+    border-radius: 12px;
+    transition: all 300ms linear;
+    max-width: 164px;
+    border: 1px solid transparent;
+    background-color: #3C278D;
+    color: white;
 }
 
-.container {
-    max-width: 1140px;
+.hero-2-btn:hover {
+    color: #3C278D;
+    border: 1px solid #3C278D;
+    background-color: white;
 }
 
-.hero-2-content-div {
+.hero-2-content {
     max-width: 538px;
 }
 
@@ -146,10 +173,9 @@
     line-height: 150%;
 }
 
-.mt-30 {
-    margin-top: 30px;
+.hero-2-button-parent{
+    margin-top: 30px; 
 }
-
 .hero-top-left-2-img {
     left: 37%;
     top: 54%;
@@ -170,12 +196,15 @@
     bottom: 54%;
 }
 
-.end-34 {
+.right-bottom-div{
     right: 34px;
 }
 
-.bottom-6 {
+.img-bottom-left-box{
     bottom: 6px;
+}
+.hero-2-top-right-div{
+    right: 0;
 }
 
 @media (max-width: 992px) {
@@ -192,7 +221,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .hero-2-sub-heading {
         font-size: 24px;
     }
@@ -201,12 +230,47 @@
         font-size: 52px;
     }
 
-    .w-md-50 {
-        width: 50%;
+   .right-bottom-div{
+    width: 50%;
+   }
+   .hero-2-top-right-first-img{
+    width: 50%;
+   }
+
+   .hero-top-right-2-img{
+    width: 50%;
+   }
+
+   .hero-2-top-first-img{
+    width: 57%;
+   }
+
+   .hero-top-left-2-img{
+    width: 57%;
+   }
+
+   .hero-2-bottom-left-first-img{
+    width: 57%;
+   }
+   
+   .hero-bottom-left-2-img{
+    width: 57%;
+   }
+
+   .hero-2-bottom-right-sec-img{
+    width: 45%;
+   }
+
+   .hero-bottom-right-2-img{
+    width: 35%;
+   }
+
+    .w-md-35{
+        width: 35%;
     }
 
-    .top-right-div {
-        right: -16% !important;
+    .hero-2-top-right-div {
+        right: -19% !important;
     }
 
     .hero-top-right-2-img {
@@ -219,6 +283,10 @@
 
     .hero-bottom-right-2-img {
         right: 77%;
+    }
+
+    .hero-2-btn{
+        font-size: 14px;
     }
 }
 
@@ -235,72 +303,118 @@
         font-size: 48px;
     }
 
-    .top-right-div {
+    .hero-2-top-right-div {
         right: -33% !important;
     }
+
+    .hero-2-btn{
+        font-size: 14px;
+    }
+
+    .hero-2-bottom-right-sec-img{
+        width: 57%;
+    }
+
+    .hero-bottom-right-2-img{
+        width: 57%;
+    }
+
+    .right-bottom-div{
+        right: -19% !important;
+    }
+
 }
 
 
-/* Hero third   */
 
-.heading {
+
+/* ===================== HERO THIRD Section CSS CODE START  ===================== */
+
+
+
+
+
+.hero-3-heading {
     line-height: 120%;
     font-size: 58px;
     color: black;
 }
 
-.text-info {
+.hero-3-text-info {
     max-width: 771px;
-}
-
-.text-info p {
-    color: #4C4C4D;
-    line-height: 150%;
-    font-size: 16px;
+    p {
+        color: #4C4C4D;
+        line-height: 150%;
+        font-size: 16px;
+        margin-bottom: 21px;
+    }
 }
 
 .waves-bg-img {
-    background-image: url("../src/assets/images/svg/hero-3-bg.svg");
+    background-image: url("./assets/images/svg/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.mb-31 {
-    margin-bottom: 31px;
+.hero-3-btn {
+    padding: 11px 56px;
+    border-radius: 12px;
+    transition: all 300ms linear;
+    border: 1px solid transparent;
+    max-width: 164px;
+    background-color: #3C278D;
+    color: white;
 }
 
+.hero-3-btn:hover {
+    color: #3C278D;
+    border: 1px solid #3C278D;
+    background-color: white;
+}
 
-@media (max-width: 992px) {
-    .heading {
+@media (max-width:992px) {
+    .hero-3-heading {
         font-size: 48px;
     }
 
-    .text-info p {
+    .hero-3-text-info {
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .hero-3-heading {
+        font-size: 42px;
+    }
+
+    .hero-3-btn{
         font-size: 14px;
     }
 }
 
-@media (max-width: 768px) {
-    .heading {
-        font-size: 42px;
-    }
-}
-
-@media (max-width: 576px) {
-    .heading {
+@media (max-width:576px) {
+    .hero-3-heading {
         font-size: 38px;
     }
 
-    .text-info p {
-        font-size: 12px;
+    .hero-3-text-info {
+        p {
+            font-size: 12px;
+        }
+    }
+    .hero-3-container{
+        padding: 0px 20px !important;
     }
 }
 
 
 
 
-/*Hero Forth CSS*/
+/* ===================== HERO FORTH Section CSS CODE START  ===================== */
+
 
 
 
@@ -309,83 +423,95 @@
     line-height: 150%;
     font-size: 58px;
     color: black;
-}
-
-.hero-4-text-info {
-    max-width: 771px;
-}
-
-.hero-4-text-info p {
-    color: #4C4C4D;
-    line-height: 150%;
-    font-size: 16px;
-    margin-top: 16px;
+    margin-top: 96px;
 }
 
 .hero-4-btn {
+    padding: 9px 56px;
+    background-color: white;
+    border-radius: 12px;
+    color: #3C278D;
+    border: 1px solid #3C278D;
+    transition: all 300ms linear;
+    max-width: 164px;
     margin-bottom: 62px;
-    margin-top: 19px;
 }
 
-.hero-leaves {
-    max-width: 1140px;
+.hero-4-btn:hover {
+    background-color: #3C278D;
+    color: white;
 }
 
-.pt-96 {
-    padding-top: 96px;
+
+.hero-4-text-info {
+    max-width: 771px;
+
+    p {
+        color: #4C4C4D;
+        line-height: 150%;
+        font-size: 16px;
+        margin-bottom: 19px;
+    }
 }
 
-@media (max-width: 992px) {
+.hero-4-leaves {
+    min-width: 1140px;
+}
+
+@media (max-width:1200px) {
+    .hero-leaves {
+        min-width: unset;
+    }
+ 
+}
+@media (max-width:992px) {
     .hero-4-heading {
         font-size: 48px;
     }
 
-    .hero-4-text-info p {
-        font-size: 14px;
+    .hero-4-text-info {
+        p {
+            font-size: 14px;
+        }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     .hero-4-heading {
         font-size: 42px;
+        margin-top: 48px;
     }
-
-    .pt-md-72 {
-        padding-top: 72px;
-    }
-
-    .hero-4-btn {
-        margin-bottom: 48px;
-        margin-top: 0px;
-    }
-
-    .hero-4-text-info p {
-        margin-bottom: 10px;
+    .hero-4-text-info {
+        p{
+          margin-bottom: 10px;
+        }
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width:576px) {
     .hero-4-heading {
         font-size: 38px;
         text-align: center;
+        margin-top: 0;
+        margin-bottom: 0 !important;
     }
 
-    .hero-4-text-info p {
-        font-size: 12px;
-        margin-top: 0;
+    .hero-4-text-info {
+        p {
+            font-size: 12px;
+        }
     }
     .hero-4-btn{
         margin-bottom: 30px;
     }
-
-    .pt-sm-0 {
-        padding-top: 0px;
-    }
 }
 
 
 
-/*Hero Fifth CSS*/
+
+/* ===================== HERO FORTH Section CSS CODE START  ===================== */
+
+
 
 
 
@@ -402,26 +528,47 @@
     line-height: 150%;
 }
 
-.min-h-527 {
-    min-height: 527px;
+.hero-5-btn {
+    padding: 9px 56px;
+    background-color: white;
+    border-radius: 12px;
+    color: #3C278D;
+    border: 1px solid #3C278D;
+    transition: all 300ms linear;
+    max-width: 164px;
+    margin-top: 32px;
 }
+
+.hero-5-btn:hover {
+    background-color: #3C278D;
+    color: white;
+}
+    .flower-img-parent{
+        min-height: 527px; 
+    }
 
 .flower-img {
     max-width: 427px;
     width: 100%;
 }
 
-.absolute-5-img {
+.nature-img-with-road {
     max-width: 427px;
     width: 100%;
     right: 7%;
     bottom: 0%;
 }
 
-.absolute-5-div {
+.flower-img-box {
     max-width: 665px;
     width: 100%;
     transform: translateX(40px);
+}
+@media (max-width:1200px) {
+    .container{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 }
 
 @media (max-width:992px) {
@@ -431,6 +578,9 @@
 
     .hero-5-text {
         font-size: 14px;
+    }
+    .hero-5-container{
+        padding: 24px 0px;
     }
 }
 
@@ -443,13 +593,14 @@
         margin-top: 20px;
     }
 
-    .hero-5-text {
+    .hero-5-heading {
         margin: 10px 0px;
     }
-    .absolute-5-div {
-        transform: translateX( 0px);
+
+    .flower-img-box {
+        transform: translateX(0px);
     }
-    .absolute-5-img {
+    .nature-img-with-road {
         right: 0;
     }
 }
@@ -459,18 +610,27 @@
         font-size: 38px;
     }
 
-    .hero-5-text {
+    .hero-5-heading {
         font-size: 12px;
+    }
+}
+@media (max-width:426px) {
+    .nature-img-with-road{
+        top: 48%;
     }
 }
 
 
 
-/*Hero Sixth CSS*/
+
+
+/* ===================== HERO FORTH Section CSS CODE START  ===================== */
+
+
 
 
 .hero-6-section {
-    background-image: url('../src/assets/images/png/hero-6-bg-img.png');
+    background-image: url('./assets/images/png/hero-6-bg-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-size: center;
@@ -499,12 +659,11 @@
 }
 
 .hero-6-btn {
-    padding: 13.5px 29px;
+    padding: 11.5px 29px;
     background-color: #46AD47;
     color: black;
     border-radius: 12px;
     border: 0;
-    line-height: 120%;
     transition: all 300ms linear;
 }
 
@@ -542,7 +701,9 @@
 
 
 
-/*Hero Sixth CSS*/
+
+/* ===================== HERO SEVENTH Section CSS CODE START  ===================== */
+
 
 
 
@@ -556,7 +717,7 @@
     line-height: 120%;
 }
 
-.hero-7-color-heading {
+.hero-color-heading {
     color: #46AD47;
 }
 
@@ -576,6 +737,7 @@
     border: 0;
     max-width: 194px;
     transition: all 300ms linear;
+    white-space: nowrap;
 }
 
 .pointer-event-none {
@@ -585,14 +747,11 @@
 .hero-7-btn:hover {
     box-shadow: #46AD47 0px 7px 29px 0px;
 }
-
-.ellipse-img {
+.ellipse-img{
     bottom: 2%;
     left: 2%;
-    filter: blur(8px);
 }
-
-.vehical-img {
+.vehical-img{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -600,9 +759,13 @@
 }
 
 @media (max-width:1280px) {
-    .vehical-img {
+
+    .vehical-img{
         width: 100%;
         position: relative;
+    }
+    .hero-7-text{
+        margin-bottom: 32px;
     }
 }
 
@@ -610,18 +773,30 @@
     .hero-7-heading {
         font-size: 56px;
     }
-
+    .hero-7-row{
+        gap: 30px;
+    }
+    .hero-7-btn{
+        font-size: 14px;
+    }
     .hero-7-text {
         font-size: 14px;
+        margin: 8px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hero-7-container{
+        padding: 0 !important;
+    }
+    .hero-7-col{
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
 @media (max-width:768px) {
     .hero-7-heading {
         font-size: 52px;
-    }
-    .hero-7-text {
-        margin-top: 8px;
     }
 }
 
@@ -638,17 +813,12 @@
 
 
 
-/*Hero 8 CSS*/
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* {
-    font-family: "Inter", sans-serif;
-}
+/* ===================== HERO EIGHT Section CSS CODE START  ===================== */
 
-.container {
-    max-width: 1140px;
-}
+
+
 
 .hero-8-section {
     background-color: #0A0A08;
@@ -677,7 +847,7 @@
 }
 
 .hero-8-btn {
-    padding: 11px 29px;
+    padding: 11.5px 29px;
     background-color: #46AD47;
     color: black;
     border-radius: 12px;
@@ -688,35 +858,29 @@
 .hero-8-btn:hover {
     box-shadow: #46AD47 0px 7px 29px 0px;
 }
-
-.cube {
+.hero-8-cube{
     bottom: 5%;
     right: 5%;
     filter: blur(10px);
 }
-
-.cube-shadow {
+.hero-8-cube-shadow{
     bottom: -35%;
     right: -20%;
     filter: blur(10px);
 }
-
-.cube-top {
-    top: 5%;
+.hero-8-cube-top{
+    top: 25%;
     left: 5%;
     filter: blur(10px);
 }
-
-.cube-shadow-top {
+.hero-8-cube-shadow-top{
     top: -35%;
     left: -20%;
     filter: blur(10px);
 }
-
-.pointer-event-none {
+.pointer-event-none{
     pointer-events: none;
 }
-
 @media (max-width:992px) {
     .hero-8-heading {
         font-size: 56px;
@@ -744,7 +908,13 @@
     }
 }
 
-/*Hero 9 CSS*/
+
+
+
+
+/* ===================== HERO NINETH Section CSS CODE START  ===================== */
+
+
 
 
 .bg-light-black {
@@ -755,8 +925,8 @@
     color: #03D79B;
 }
 
-.text-9-info-div {
-    max-width: 333px;
+.hero-9-text-info-box {
+    max-width: 355px !important;
 }
 
 .hero-9-text-info {
@@ -766,9 +936,10 @@
 }
 
 .hero-9-btn {
-    padding: 18px 45px;
+    padding: 15.5px 45.5px;
     background-color: #46AD47;
     border-radius: 51px;
+    white-space: nowrap;
     max-height: 55px;
     cursor: pointer;
     z-index: 100;
@@ -785,12 +956,12 @@
     font-size: 128px;
 }
 
-.box {
+.hero-9-box {
     margin-top: 58px;
 }
 
 .hero-9-cube {
-    top: 100px;
+    top: 21%;
     filter: blur(10px);
 }
 
@@ -814,12 +985,29 @@
 
 .bottom-circle {
     left: 50%;
+    bottom: -11%;
     transform: translateX(-50%);
+}
+.top-ring{
+    right: -8%;
+    top: -9%;
+}
+
+.hero-9-colors-heading {
+    text-align: right;
+}
+@media (max-width:1200px) {
+    .hero-9-heading{
+        font-size: 112px;
+        text-align: start !important;
+    }
+    
 }
 
 @media (max-width:992px) {
     .hero-9-heading {
-        font-size: 112px;
+        font-size: 96px;
+        line-height: 100%;
     }
 
     .hero-9-text-info {
@@ -827,20 +1015,27 @@
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
     .hero-9-heading {
-        font-size: 96px;
+        font-size: 72px;
     }
 
-    .box {
+    .hero-9-box {
         margin-top: 30px;
+    }
+
+    .hero-9-colors-heading {
+        text-align: start;
     }
 }
 
 @media (max-width:576px) {
     .hero-9-heading {
-        font-size: 72px;
-    }
+        font-size: 60px;
+        }
+        .hero-9-bottom-cube-shadow{
+            opacity: 0;
+        }
 
     .hero-9-text-info {
         font-size: 14px;
