@@ -6,12 +6,10 @@
 }
 
 .bg-img {
-  background-image: url('../src/assets/images/png/sec-1-bg.webp');
+  background-image: url(./assets/images/png/sec-1-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .main-heading {
@@ -20,62 +18,50 @@
 
 .sec-text {
   max-width: 817px;
-  color: #4A4A4A;
+  color: #474747;
 }
 
-.pushable {
-  background: #231754;
-  cursor: pointer;
-}
-
-.front {
+.footer-btn {
   border: 2px solid transparent;
-  padding: 9px 52px;
-  font-size: 1.25rem;
+  padding: 10px 55px;
   background: #3C278D;
-  transform: translateY(-4px);
+  border-radius: 12px;
   transition: all 400ms linear;
 }
 
-.front:hover {
+.footer-btn:hover {
   background: white;
   color: #231754 !important;
   border: 2px solid #231754;
-
-}
-
-.pushable:active .front {
-  transform: translateY(0px);
-  transition: all 0ms linear;
 }
 
 @media (max-width:992px) {
   .main-heading {
     font-size: 36px;
   }
-
 }
 
 @media (max-width:576px) {
   .main-heading {
     font-size: 28px;
   }
-
-  .front {
-    padding: 7px 38px;
-  }
-
 }
+
 /* About us Second */
+.about-2-container {
+  max-width: 1280px !important;
+}
 
 .multi-color-img {
   max-width: 558px;
   cursor: pointer;
-  transition: all 300ms linear;
+  transition: all 300ms;
+  border-radius: 12px;
 }
 
-.img-parent {
+.img-2-parent {
   max-width: 558px;
+  border-radius: 12px;
 }
 
 .multi-color-img:hover {
@@ -84,137 +70,125 @@
 
 .main-heading-2 {
   font-size: 48px;
+  line-height: 120%;
+  color: #1E1E1E;
 }
 
-.sec-text-2 {
+.about-text-2 {
   max-width: 496px;
-  color: #4A4A4A;
+  color: #1E1E1E;
+  line-height: 150%;
 }
 
-
-.button {
-  background: #090909;
-  cursor: pointer;
-}
-
-.front-btn {
+.about-btn-2 {
   border: 2px solid transparent;
-  padding: 9px 52px;
-  font-size: 1.25rem;
+  padding: 10px 55px;
+  border-radius: 12px;
   background: #3C278D;
-  transform: translateY(-6px);
-  transition: all 400ms linear;
+  max-width: 164px;
+  transition: all 300ms;
 }
 
-.front-btn:hover {
+.about-btn-2:hover {
   background: white;
   color: #231754 !important;
   border: 2px solid #231754;
 
 }
 
-.button:active .front-btn {
-  transform: translateY(0px);
-  transition: all 0ms linear;
-}
-
-
 @media (max-width:1200px) {
-  .xl-mx-auto {
-      margin-left: auto;
-      margin-right: auto;
-      
-  }
-
   .main-heading-2 {
-      margin-top: 60px;
+    margin-top: 36px;
   }
 
-  .img-parent {
-      margin-top: 60px;
+  .img-2-parent {
+    margin-top: 60px;
   }
 
-  .button-2 {
-      margin-bottom: 60px;
+  .about-button-2 {
+    margin-bottom: 60px;
   }
 }
+
 @media (max-width:992px) {
-  .main-heading-2{
+  .main-heading-2 {
     font-size: 36px;
-
   }
 }
+
 @media (max-width:576px) {
-  .main-heading-2{
+  .main-heading-2 {
     font-size: 28px;
-    margin-top: 40px;
+    margin-top: 36px;
   }
 }
 
-@media (max-width:992px) {
-  .main-heading {
-      font-size: 36px;
-  }
-
+/*=================----========== About us third ======================*/
+.about-3-container {
+  max-width: 1140px !important;
 }
 
-@media (max-width:576px) {
-  .main-heading {
-      font-size: 28px;
-      margin-top: 36px;
-  }
-
-}
-/* About us third */
 .main-heading-3 {
   max-width: 545px;
   font-size: 48px;
   color: #6C6354;
-  line-height: 120% !important;
+  line-height: 100% !important;
   font-weight: 600;
 }
 
-.sec-img-3 {
+.section-img-3 {
   max-width: 455px;
 }
 
-.sec-text-3 {
+.about-text-3 {
   line-height: 150% !important;
   color: #989287;
   max-width: 545px;
   margin-bottom: 40px;
 }
 
-.button-3 {
+.contact-button-3 {
   background: linear-gradient(98.04deg, #4F7566 3.36%, #A2AF7A 100%);
-  font-size: 18px;
-  border: 2px solid transparent;
-  color: #FFFFFF;
-  padding: 20px;
+  border: 2px solid white;
+  padding: 12px 23px;
   transition: all 400ms linear;
-  width: 165px;
-  text-align: center;
-  border-radius: 12px;
+  border-radius: 8px;
 }
-.button-3:hover{
+
+.contact-button-3:hover {
   background: white;
-  border:2px solid #A2AF7A;
-  color: #A2AF7A;
+  border-color: #4F7566;
+  color: #4F7566 !important;
+}
+
+@media (max-width:1140px) {
+  .container {
+    padding: 0 20px !important;
+  }
+
+  .section-img-3 {
+    margin-right: 8px;
+  }
 }
 
 @media (max-width:992px) {
-  .main-heading-3{
+  .main-heading-3 {
     font-size: 36px;
 
   }
 }
+
 @media (max-width:576px) {
-  .main-heading-3{
+  .main-heading-3 {
     font-size: 28px;
     margin-top: 40px;
   }
 }
-/* About us Four */
+
+/*============================ About us Four ===============================*/
+.about-4-container {
+  max-width: 1180px !important;
+}
 
 .main-heading-4 {
   max-width: 550px;
@@ -227,7 +201,7 @@
   color: #FF8C00;
 }
 
-.bg-color {
+.bg-color-4 {
   background: #0E0F13;
   width: 80%;
 }
@@ -238,52 +212,60 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.top-bottom-spacing{
-  padding: 170px 0;
+
+.top-bottom-spacing-4 {
+  padding: 160px 0;
 }
-.light-gray{
+
+.light-gray-4 {
   color: #BEBBB8;
 }
-.services-btn{
+
+.services-btn-4 {
   background: #FFF0CC;
   border: 2px solid #FFF0CC;
-  padding: 12px 24px;
+  padding: 10px 20px;
   transition: all 300ms linear;
 }
-.services-btn:hover{
-  background:transparent;
-  color:#FFF0CC ;
+
+.services-btn-4:hover {
+  background: transparent;
+  color: #FFF0CC;
 }
-.sec-img-4{
+
+.section-img-4 {
   position: absolute;
   top: -120%;
 }
-.img-position{
+
+.img-position-4 {
   position: relative;
 }
+
 @media (max-width:1200px) {
-  .sec-img-4{
-      position: unset !important;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 40px;
-      
+  .section-img-4 {
+    position: unset !important;
   }
-  .main-heading-4{
-      font-size: 34px;
+
+  .main-heading-4 {
+    font-size: 36px;
   }
-  .col-xl-6{
-      position: unset !important;
+
+  .img-position-4 {
+    position: unset !important;
   }
-  .top-bottom-spacing{
-      padding: 60px 0;
+
+  .top-bottom-spacing-4 {
+    padding: 60px 0;
   }
 }
+
 @media (max-width:576px) {
-  .sec-img-4{
-      width: 100%;
+  .section-img-4 {
+    width: 100%;
   }
-  .main-heading-4{
-      font-size: 28px;
+
+  .main-heading-4 {
+    font-size: 28px;
   }
 }
