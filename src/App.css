@@ -1,122 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-  font-family: "Inter", sans-serif !important;
-  text-decoration: none !important;
+    box-sizing: border-box !important;
+    list-style: none !important;
+    text-decoration: none !important;
+    font-family: "Inter", sans-serif !important;
 }
 
 .container {
-  max-width: 1140px !important;
-  width: 100% !important;
-  padding-left: 12px !important;
-  padding-right: 12px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+    max-width: 1140px !important;
 }
 
 .bg-logo {
-  background-color: #C5C2C2;
-  width: 87px;
-  height: 48px;
-  margin-bottom: 26px;
-  cursor: pointer;
+    background-color: #C5C2C2;
+    width: 87px;
+    height: 48px;
+    margin-bottom: 26px;
+    cursor: pointer;
 }
 
 .leading-150 {
-  line-height: 150%;
+    line-height: 150% !important;
 }
 
 .dark-blue {
-  color: #3C278D;
+    color: #3C278D;
 }
 
-.bg-icon {
-  background-color: #3C278D;
-  border-radius: 100%;
-  width: 34px;
+.be-icon {
+    background-color: #3C278D;
+    border-radius: 100%;
+    width: 35px;
+    height: 33px;
 }
 
 .text-gray {
-  color: #707070;
+    color: #707070;
 }
 
 .footer-text {
-  max-width: 221px;
+    max-width: 221px;
 }
 
 .shade-gray {
-  color: #4D4D4D;
+    color: #4D4D4D;
 }
 
 .email {
-  outline: none;
-  background: none;
-  margin-right: 20px;
+    outline: none;
+    background: none;
+    width: 73%;
 }
 
 .email::placeholder {
-  color: #000;
+    color: #000;
 }
 
 .mail {
-  background: #EAE7F2;
-  border-radius: 12px;
-  padding-right: 5px !important;
-
+    background: #EAE7F2;
+    border-radius: 12px;
 }
 
-.mail-btn-1 {
-  padding: 8px 14px;
-  border: 2px solid transparent;
-  background: #3C278D;
-  border-radius: 12px;
-  line-height: 121%;
-
+.Search-btn {
+    padding: 5.5px 14px;
+    border: 2px solid transparent;
+    background: #3C278D;
+    border-radius: 12px;
 }
 
 .transitions {
-  transition: all 400ms linear;
+    transition: all 300ms linear;
 }
 
-.mail-btn-1:hover {
-  background-color: #fff;
-  color: #3C278D !important;
-  border: 2px solid #3C278D;
+.Search-btn:hover {
+    background-color: #fff;
+    color: #3C278D !important;
+    border: 2px solid #3C278D;
 }
 
-.line {
-  width: 100%;
-  height: 1px;
-  background: #3C278D;
-  margin-top: 30px;
+.bottom-line {
+    height: 1px;
+    background: #3C278D;
+    margin-top: 40px !important;
 }
 
 .max-sm-w {
-  max-width: 327px;
+    max-width: 327px;
 }
 
 .common-hover:hover {
-  color: #3C278D;
+    color: #3C278D;
 }
 
+.icon-hover:hover {
+    scale: 1.1;
+}
 
-/* =========================== */
+@media (max-width:991px) {
+    .container {
+        padding: 0 20px !important;
+    }
 
+}
+/* ====================== Footer-2======================== */
 
-.footer-bg-2 {
+.footer-bg {
   background: #1E1E1E;
 }
 
-.light-gray-2 {
+.light-gray {
   color: #BBBBBB;
 }
 
-.icon-bg-2 {
-  background: #F7B103;
+.light-blue {
+  color: #77808B;
 }
 
 .about-text-2 {
   margin-bottom: 40px;
+  max-width: 375px;
+  line-height: 150%;
+}
+
+.letter-spacing {
+  letter-spacing: 0.07px;
 }
 
 .fs-md {
@@ -126,28 +133,29 @@
 .email-2 {
   outline: none;
   background: none;
-  padding-right: 50px;
+  padding-right: 30px;
+  width: 100%;
+}
+
+.email-2::placeholder {
+  color: #77808B;
 }
 
 .mail-2 {
   background: #FEF7E6;
   border-radius: 12px;
-  padding-top: 12px;
-  padding-bottom: 10px;
-}
-
-.transitions {
-  transition: all 400ms linear;
+  padding: 11px 0;
+  width: 255px;
 }
 
 .mail-btn-2 {
-  width: 124px;
-  height: 48px;
+  max-width: 124px;
+  max-height: 48px;
   border: 2px solid transparent;
   background: #F7B103;
   border-radius: 12px;
-  line-height: 121%;
   margin-left: -20px;
+  padding: 10px 21px;
 }
 
 .mail-btn-2:hover {
@@ -156,56 +164,55 @@
   border: 2px solid #F7b103;
 }
 
-.leading-150 {
-  line-height: 150%;
-}
-
 .bottom-line-2 {
   width: 100%;
   height: 1px;
   background: #4B4B4B;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .common-hover-2:hover {
   color: #F7B103;
-  cursor: pointer;
 }
 
-@media (max-width:992px) {
-  .icons-link-2 {
-    margin-bottom: 40px;
-    max-width: 174px;
-    margin-left: auto;
-    margin-right: auto;
+.icon-hover-2 path,
+rect {
+  transition: all 300ms linear;
+}
+
+.icon-hover-2:hover path {
+  fill: #F7B103;
+}
+
+.icon-hover-2:hover rect {
+  fill: black;
+}
+
+@media (max-width:767px) {
+  .mail-btn-2 {
+      margin-left: 0;
   }
 
   .about-text-2 {
-    max-width: 380px;
-    margin-left: auto;
-    margin-right: auto;
+      margin-bottom: 20px;
   }
 
-  .footer-logo-2 {
-    margin-top: 40px;
+  .top-bottom-space-2 {
+      padding-top: 32px;
+      padding-bottom: 32px;
   }
 
-  .email-parnt-2 {
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
+  .mail-2 {
+      margin-bottom: 20px;
   }
 }
 
-@media (max-width:768px) {
-  .mail-btn-2 {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
-/* ---------------------------------------- */
+/* ---------------------  footer--3  ------------------- */
+.top-spacing-3{
+  margin-top: 79px;
+}
 
 .email-3 {
   max-width: 96px;
@@ -217,12 +224,28 @@
   background-position: center;
 }
 
+.letter-spacing-footer-3-1 {
+  letter-spacing: 0.4px;
+}
+
+.letter-spacing-footer-3-2 {
+  letter-spacing: 0.09px;
+}
+
 .muted-gray {
-  color: #444949;
+  color: #444949 !important;
 }
 
 .about-text-3 {
-  max-width: 420px;
+  max-width: 425px;
+}
+
+.footer-3-links {
+  margin-bottom: 10px;
+}
+
+.icons-parent-3 {
+  max-width: 174px;
 }
 
 .bottom-line-3 {
@@ -232,40 +255,67 @@
   margin-bottom: 15px;
 }
 
-.transitions {
-  transition: all 300ms linear;
+.common-hover-3:hover {
+  color: #38ADB5;
+}
+
+.main-heading-3 {
+  font-size: 24px;
 }
 
 .common-hover-3:hover {
-  color: #38ADB5;
-  cursor: pointer;
+  color: #38ADB5 !important;
 }
 
-.mail-address-3 {
-  max-width: 190px;
+.icon-hover-3 path,
+rect {
+  transition: all 300ms linear;
 }
+
+.icon-hover-3:hover path {
+  fill: #38ADB5;
+}
+
+.icon-hover-3:hover rect {
+  fill: #fff;
+}
+
 
 @media (max-width:992px) {
+  .main-heading-3 {
+      font-size: 20px;
+  }
+
+  .top-spacing-3 {
+      margin-top: 48px !important;
+  }
+
+}
+
+@media (max-width:640px) {
+  .main-heading-3 {
+      font-size: 18px;
+  }
+  .top-spacing-3 {
+      margin-top: 24px !important;
+  }
+
+}
+
+@media (max-width:1023.99px) {
   .bg-cover {
-    background-size: cover;
-  }
-
-  .max-lg-top {
-    margin-top: 40px;
+      background-size: cover !important;
   }
 }
 
-/* ========================== */
-.Footer-bg-4 {
-  background: #010101;
-}
+/* ==================-==========  footer 4  ====================== */
 
 .light-gray-4 {
   color: #B3B3B3;
 }
 
 .game-logo-4 {
-  margin-bottom: 26px;
+  margin-bottom: 29px;
 }
 
 .footer-links-4 {
@@ -277,24 +327,38 @@
   height: 1px;
   background: #4B4B4B;
   margin-top: 56px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
+}
+
+.icon-hover-4 path,
+rect {
+  transition: all 300ms linear;
+}
+
+.icon-hover-4:hover path {
+  fill: #EB0055;
+}
+
+.icon-hover-4:hover rect {
+  fill: #fff;
 }
 
 .left-layer {
-  top: 25%;
+  top: 50%;
   left: 0;
   pointer-events: none;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
-
+  transform: translatey(-50%);
 }
 
 .right-layer {
-  bottom: 25%;
+  bottom: 50%;
   right: 0;
   pointer-events: none;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
+  transform: translatey(50%);
 }
 
 .left-ellips {
@@ -311,23 +375,36 @@
 
 .common-hover-4:hover {
   color: #EB0055;
-  cursor: pointer;
 }
 
-.transitions {
-  transition: all 300ms linear;
-}
 
-/* ======================== */
-.light-gray-5 {
+/* =================-========== footer-5  ================= */
+
+.footer-5-container{
+  max-width: 1320px !important;
+  padding: 40px 12px;
+}
+.light-gray-5{
   color: #A0A6B0;
 }
 
-.bg-color-5 {
+.bg-color-5{
   background: #151619;
+}
+.common-hover-5:hover{
+  color: white;
+  cursor: pointer;
 }
 
 .common-hover-5:hover {
-  color: white;
-  cursor: pointer;
+  color: #fff;
+}
+.icon-hover-5 path, rect{
+  transition: all 300ms linear;
+}
+.icon-hover-5:hover path {
+  fill: black;
+}
+.icon-hover-5:hover rect{
+  fill:#fff ;
 }
