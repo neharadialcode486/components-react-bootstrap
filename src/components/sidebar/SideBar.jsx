@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 import plus from "../../assets/images/webp/plus-iocns.webp";
 import Icon from '../common/Icons';
@@ -6,10 +6,12 @@ import { EVENTS_DATA } from '../../utils/Helper';
 import DataSwiper from './DataSwiper';
 
 const SideBar = () => {
+    const [activeTab, setActiveTab] = useState(0);
+    const [open, setOpen] = useState(false);
     const Data = ['Requirements', 'Events', 'Career event', 'Activities', 'Masterclasses']
     return (
         <div className='d-flex justify-content-between bg-dark-gray'>
-            <Header />
+            <Header activeTab={activeTab} setActiveTab={setActiveTab} open={open} setOpen={setOpen} />
             <div className="bg-off-yellow w-100 position-fixed max-w-1920 top-0 d-flex justify-content-end translate-middle-x start-50 h-840">
                 <img src={plus} alt="plus" className='dot-img' />
             </div>
@@ -17,7 +19,7 @@ const SideBar = () => {
                 <h2 className='fw-bold text-3xl text-md-4xl mt-4 mt-sm-2'>Welcome back, Zareh 👋🏻</h2>
                 <p className='mt-3 fw-normal text-base'>Below you find your upcoming events, enrolled programmes and progress</p>
                 <div className="mt-5 flex-xl-row flex-column d-flex justify-content-between gap-20">
-                    <div className="rounded-lg w-100 w-xl-58 bg-white p-2 p-lg-32">
+                    <div className={`rounded-lg w-100 w-xl-58 bg-white p-2 p-lg-32 ${activeTab === 2 || activeTab === 3 ? "d-none" : ""}`}>
                         <h2 className='fw-bold text-2xl mb-4 mb-lg-5'>You have 3 upcoming events</h2>
                         {EVENTS_DATA.map((items, idx) => (
                             <div key={idx} className="d-flex justify-content-between align-items-center mt-4 w-100">
@@ -39,7 +41,7 @@ const SideBar = () => {
                         ))}
                         <a href="/" className='d-flex align-items-center gap-2 fw-semibold text-sm transition mt-5 w-fit mb-5 mb-md-56 text-black'>More events <Icon className='transition' iconName='rightArrowIcon' /></a>
                     </div>
-                    <div className="rounded-lg w-100 w-xl-41 bg-white p-2 p-lg-32">
+                    <div className={`rounded-lg w-100 w-xl-41 bg-white p-2 p-lg-32 ${activeTab === 1 || activeTab === 2 ? "d-none" : ""}`}>
                         <h2 className='fw-bold text-2xl mb-4 mb-md-5'>Your programmes</h2>
                         {[...Array(2)].map((_, index) => (
                             <div key={index} className="rounded-lg box position-relative overflow-hidden">
@@ -67,8 +69,9 @@ const SideBar = () => {
                         <a href="/" className='d-flex align-items-center gap-2 fw-semibold text-sm transition text-black w-fit mt-4 mb-1'>More programmes <Icon className='transition group-hover:scale-90' iconName='rightArrowIcon' /></a>
                     </div>
                 </div>
-                <DataSwiper />
+                <DataSwiper className={activeTab === 1 || activeTab === 3 ? "d-none" : activeTab === 2 ? "mt-xl-5 pt-xl-5" : ""} />
             </div>
+            {open && <div onClick={() => setOpen(!open)} className='bg-black d-sm-none opacity-70 z-20 position-fixed start-0 top-0 min-vh-100 w-100'></div>}
         </div>
     )
 }

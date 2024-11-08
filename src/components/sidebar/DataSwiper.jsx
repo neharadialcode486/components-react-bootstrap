@@ -6,9 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { SWIPER_DATA } from '../../utils/Helper';
 
-const DataSwiper = () => {
+const DataSwiper = ({ className }) => {
     return (
-        <div className='mt-5 position-relative w-100'>
+        <div className={`mt-5 position-relative w-100 ${className}`}>
             <div className="d-flex w-100 justify-content-between mb-4">
                 <h2 className='fw-bold text-2xl'>Recommended for you</h2>
                 <div className="d-flex align-items-center gap-2 position-relative">
